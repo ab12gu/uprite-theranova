@@ -1,0 +1,1 @@
+sampRate: 10.0 Hz,	scale: 16.0/uT,	Format (by byte): X_LSB X_MSB Y_LSB Y_MSB Z_LSB Z_MSB

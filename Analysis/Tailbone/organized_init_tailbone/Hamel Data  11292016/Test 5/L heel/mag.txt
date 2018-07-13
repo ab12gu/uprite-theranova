@@ -1,0 +1,6 @@
+sampRate: 10.0 Hz,	scale: 16.0/uT,	Format (by byte): X_LSB X_MSB Y_LSB Y_MSB Z_LSB Z_MSB
+¾üœûP¥ýù`¥ý¬ùp«ý”ùc«ýšùX°ý”ùXŸýŽùe¥ý ùRŸýˆùgªýšùa“ý¬ù`“ýšùrŸý ùf™ýšù[ý¬ùaŸý¬ùgŸý ùg™ý”ùgýŽùl“ýšùmŸýšùhý”ùMªý ùcªý”ùh™ýŽùb“ý”ùaŸýšùnŸýšùoªý²ù[ý ùh“ýˆùhŸý”ùn¥ýšùiŸý¦ù{¥ý ùhªýšùoªý
+úæàýýúÇþ–û©:ý›ü,,û•ürñúûû¿û0ü÷	û0üs&û$ü«8ûüDûü(Pûü°ºûÒû•ü‹û$Öü‹ûÉ¼ý…ûV—þ}ü,þ_üº\þ_ü¡bþ_ü”sþ0ü¬…þBüv‹þBü‡…þûû\…þü´!þTü“¦ü$ü€ØûœûuØû—û ü¨ûÓü´û*ü®ûaBüÀûO}ü—ûýºûŸýãû"íüÝûÞkü—ûüyûOBü‹ûÑkü¢ûê}ü…ûƒüœû/¦ü—û`Êüûû™ýœûyŸýÆûZü‹û±üßú[qüÎúæ¦üû¸üû5Äüñúz¸üûâüýúÑâüñúiý	û±Ÿý2ûé²ü÷ú¯ƒüíùXýMù‡uýYùÂýeùÂ{ýqùÞý<ùÝýwù½¶ýƒùªÎýŽùgJþúBæý(úÿü¸ùüÑø°8û}ù? û¦ùð	ûÄùâûÄùÄ&û¬ùÖû¦ù½û²ù¦8û¬ù²&ûÄù²	ûóù²	ûýú]aûû)Nüü°›ü}ü_¸ü‰ü	¾üÐüä¡üÊü•ü¸ü;`ü¸ü¥eü¸üîüü´ãûküûûüeüü‘`ü`üvyû‘ûüû¼üDûáüVûü>û}ü8ûÍüDû6ü2û'qü&ûÐüDûƒ$ügû%‹û¤ú'ØûoúøÒû¤ú—Øû˜úÅÒûªú"ÀûžúU´û¼ú¼ºûžú¦$ü¼úD}üýúüëú¨û¶ú Àûoúr¢û¶úÏ¨û¼ú&¨û¼úƒ¢ûÈú®ûÈú´ûªú$Nü¼úãüëú­\û4ú7ÌûóùÓTüúóü(úEü(ú¡ïûúÒûúû(úÌû4ú&ü:ú$‰üLúKoý¶úÊüûšØû¤úãûûÎúüÎú!üÈú~6üÂúf6üÔúHü¼úÛfü¶úwüÔúã8ûú%‹ûõøÍ¬üiú€Îýüœþkü$hþqüŠtþfüjtþqüebþ`üjþNüÒþ¬üKPþ`ü9PþBü¢	þüëDþüÃºþü6Pþû³Èýû¬ÈýVûNæýmû"ñýyû5æýyûýý…ûñþûçñý—ûÓ÷ýØûþ<üR‡ýƒüó‘ûÞûÛüÔúnèüåúØíüûÀÜü	û¾üû[ÖüûUÊüû¸èü,ûFuýsûËþéûHþqü `üûõü,û&küaûqü\û‰üaûX²ü‹ûÊü‹û.Lý£ûîýý%ü¥ýü$›üÀû¿ÞûûÄÌû°ú7üëú[üñúT*üñú­0üû¿Hü÷ú/}üû‹ý£ûadýÌûN¡ü‹ûBüýúê´ûúÝûûÔúüÈúüÚúcüëúF0üåúq‰ü÷úæý!û´jýmûîÖüûõ¸üåúÊõûú,ºûÖùÆüÿù÷ûûáùêûûáùBüúBüúB§üùù4ý4úøÎý¤úþúƒ¶ý²ù»ÐüãøW4ýqùà#ý}ùÇ@ýƒùÈ#ý_ùçý_ùà)ý}ùâRý}ùÇdýšù¨Èýáùî¶ý²ùâîüùƒüœøâmû0ùe\û<ù'>ûkùbû_ùJûHù\ûYù
+PûNù(8ûkù)û¸ùN!û4ú]sûRúoü£û#üéûÒÆûÀûÆû¨ûFºû£ûMÞû´ûNÀûÆûSÒûÆû~£ûûVûgû £ûJûõû‘û
+*üüÂ!ûûc,ûÎúÆ8ûåúbûëúòbûñú#mûûþyûýúi¨ûýúÿBüûx‰üDûsNüû—ûFú°ºûíùU£ûÖùô®ûçù?Àûçù'—ûÿùq®ûóù‹©ûúíØûúÅü“úUkü{úü.ú2éûúãÞûÿùÄÒûúˆêûúˆØû(ú›Øû(ú‘Æû:úçØû.ú€+üuú;qüÂú<Øû(ú;—ûkùÚØû ùÓ—ûHùTÀûYù®ûkù£ûZù5‹ûZùŒ‹ûkù7©ûqù¦6ü ùZ<ü›ùÇRýçù§uýú„dýŸúªuýÈú¶jýÎú¤pýÔúÜjýÔúÜLýÔúçXýÂúF#ýæúÍý,û“+ü{ú»ëúmøÔºûÆøUü*ùVûûù›ü$ù®õûùßõûù
+õûù#Þû*ùÄyûú™0ü—ûÓþý+nþü™bþ£û"þ´ûnþÀû5hþ´û!yþÆû'hþ´û0tþÀû nþ®û>\þ8ûÂDþ°ú]yþ¼úctþ¼úSyþ¶ú]hþ¶úShþ°ú]hþªúdtþªúRyþ¼úenþ¶úYhþ¶ú]Vþ°úXnþ¼úLnþ¼ú`nþ°úRþ¶úYyþ¼úqnþ°úRnþÂú_yþ¼ú@tþ¼úRyþ¶úZbþÂúdtþÂúLbþÂúSnþ¶úYyþ¼úehþÈúY\þ¶úMtþÎúR\þ¶úYnþÂúT\þ¶úSnþ°úeyþªúfhþÂúYbþ°úYbþ¶úStþªúenþÈúWbþ¶úTnþ¼úfVþÂúfhþ¶úS…þ¶úShþ¼úY
