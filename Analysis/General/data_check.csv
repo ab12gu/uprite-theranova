@@ -1,9 +1,0 @@
-Presents the amount of recorded time per patient (in seconds) by UpRite Sensors
-LA=leftAnkle
-LH=leftHip
-RA=rightAnkle
-RH=rightHip
-TB=tailBone
-
-
-Patient Name,LA accel,LA gyro,LH accel,LH gyro,RA accel,RA gyro,RH accel,RH gyro,TB accel,TB gyro
