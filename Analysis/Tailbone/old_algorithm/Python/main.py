@@ -8,7 +8,7 @@
 import sys
 import os
 
-p = os.path.abspath('../../../Data/Parsing Program/')
+p = os.path.abspath('../../../../Data/Parsing Program/')
 sys.path.append(p)
 
 #import print_struct as visual
@@ -43,7 +43,22 @@ with open(pickle_file, 'rb') as afile:
 
 # Extract only tailbone acceleration data
 accel_data = data['UR']['sensorData']['tailBone']['accel']['data']
+plt.figure()
+plt.plot(accel_data['x'])
+plt.plot(accel_data['y'])
+plt.plot(accel_data['z'])
 
+plt.figure()
+plt.plot(accel_data['x'][249:450])
+plt.plot(accel_data['y'][249:450])
+plt.plot(accel_data['z'][249:450])
+plt.show()
+
+plt.plot(accel_data['x'][0:200])
+plt.plot(accel_data['z'][0:200])
+plt.plot(accel_data['y'][0:200])
+plt.show()
+quit()
 # Remove initial scrap data
 accel_data['x'] = accel_data['x'][4:]
 accel_data['y'] = accel_data['y'][4:]
@@ -722,7 +737,7 @@ plt.legend(['xaccel', 'accel_peaks', 'to location', 'x diff'] + legend1)
 
 #^need to put legend on side of graph
 
-# something...
+# finds all HS and TO :)
 HS['r'] = []
 HS['l'] = []
 TO['r'] = []
@@ -826,8 +841,6 @@ with open('TO_HS.csv', 'w') as csvfile:
 	for i in orientation:
 		filename.writerow(['HS'+' '+i] + [accel['sec'][x] for x in HS[i]])
 		filename.writerow(['TO'+' '+i] + [accel['sec'][x] for x in TO[i]])
-
-
 
 	
 

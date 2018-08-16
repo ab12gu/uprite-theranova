@@ -48,7 +48,7 @@ with open('data_check.csv', 'a') as csvfile:
 
 		"""Extract Pickle Data"""
 		pickle_file = input_directory + '/' +  filename 
-		with  open(pickle_file, 'rb') as afile:
+		with open(pickle_file, 'rb') as afile:
 			data = pickle.load(afile)
 
 		"""Find if data is empty"""
@@ -90,10 +90,10 @@ with open('data_check.csv', 'a') as csvfile:
 
 		writer.writerow(out)
 
-		with open(pickle_file, 'ab') as afile:
-			pickle.dump(data['Flags'] , afile)
+		with open(pickle_file, 'wb') as afile:
+			pickle.dump(data , afile)
 
 		# Check if file really has flags added...
-		#with open(pickle_file, 'rb') as afile:
-		#		data = pickle.load(afile)
+		with open(pickle_file, 'rb') as afile:
+				data = pickle.load(afile)
 		visual.print_keys(data, 9)

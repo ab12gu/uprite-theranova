@@ -2,761 +2,434 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec62f78a-ffb8-4251-bf28-2320ae3c3232" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uprite_analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uprite_analysis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/General/.ifempty.py.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/General/data_check.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysis/General/data_check.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/General/ifempty.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analysis/General/ifempty.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_01.04.26.174.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_01.04.26.174.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_01.04.26.174.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_01.04.26.174.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_01.04.26.174.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_01.04.26.174.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_01.04.26.174.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_01.04.26.174.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.05.59.871.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.05.59.871.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.05.59.871.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.05.59.871.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.05.59.871.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.05.59.871.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.05.59.871.PM/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.05.59.871.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.05.59.871.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.59.55.806.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.59.55.806.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.59.55.806.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.59.55.806.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.59.55.806.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.59.55.806.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.59.55.806.PM/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.59.55.806.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_04.59.55.806.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_12.34.03.333.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_12.34.03.333.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_12.34.03.333.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_12.34.03.333.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_12.34.03.333.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_12.34.03.333.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_12.34.03.333.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_26_2016_12.34.03.333.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.27.05.314.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/10_27_2016 data/10_27_2016_02.29.56.694.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_15_2016_02.34.45.349.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_15_2016_02.34.45.349.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_15_2016_02.34.45.349.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_15_2016_02.34.45.349.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_15_2016_02.34.45.349.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_15_2016_02.34.45.349.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_15_2016_02.34.45.349.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_15_2016_02.34.45.349.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.19.06.944.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.19.06.944.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.19.06.944.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.19.06.944.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.19.06.944.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.19.06.944.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.19.06.944.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.19.06.944.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.43.39.538.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.43.39.538.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.43.39.538.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.43.39.538.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.43.39.538.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.43.39.538.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.43.39.538.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/11_16_2016_05.43.39.538.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/AnalyzeGaitData.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/AnalyzePitchData.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/DataParser.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/FeatureIdentification.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Data Collection - Meeting with Kate Hamel.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/nonused data.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, heel/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, heel/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, heel/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, heel/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, heel/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, heel/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, heel/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, heel/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, heel/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/data.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/front of foot 01 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 1/front of foot 01 - gait.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/front of ankle 02 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/front of ankle 02 - gait.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/imuAlgorithmsTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 2/test2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 3/front of ankle 03 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/L front hip/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/L front hip/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/L front hip/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/L front hip/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/L front hip/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/L front hip/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/L front hip/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/L front hip/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/L front hip/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/R front hip/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/R front hip/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/R front hip/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/R front hip/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/R front hip/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/R front hip/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/R front hip/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/R front hip/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/R front hip/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 4/lateral foot 04 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/L heel/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/L heel/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/L heel/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/L heel/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/L heel/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/L heel/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/L heel/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/L heel/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/L heel/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/R heel/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/R heel/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/R heel/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/R heel/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/R heel/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/R heel/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/R heel/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/R heel/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/R heel/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 5/heel 05 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/L shin/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/L shin/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/L shin/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/L shin/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/L shin/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/L shin/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/L shin/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/L shin/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/L shin/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/R shin/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/R shin/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/R shin/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/R shin/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/R shin/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/R shin/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/R shin/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/R shin/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/R shin/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 6/shin 06 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/L shin/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/L shin/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/L shin/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/L shin/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/L shin/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/L shin/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/L shin/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/L shin/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/L shin/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/R shin/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/R shin/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/R shin/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/R shin/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/R shin/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/R shin/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/R shin/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/R shin/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/R shin/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/Tailbone/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/Tailbone/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/Tailbone/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/Tailbone/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/Tailbone/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/Tailbone/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/Tailbone/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/Tailbone/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/Tailbone/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/lumbar 07 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/Test 7/lumbar 07 - gait.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/Hamel Data  11292016/~$ta Collection - Meeting with Kate Hamel.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/TailboneAnalysis.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/VelocityData.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/extractUpRiteData.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/findPeaksForward.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/findRRPeaks.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/gaitInfo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/getAllUpRiteData.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/getFirstDifference.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/getFirstIntegration.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/getStrideVelocity.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/highPassFilter.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/imudata2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/integrateIMU.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/lowPassfilter.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/plotGyroAccel.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/positionImage.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/positionImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/saveCsv.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/saveSensorStructToCsv.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/xEarthDcRemovalAdjusted.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/xforwardEarth.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/yEarthDcRemovalAdjusted.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/yforwardEarth.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/z2.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/zEarthDcRemovalAdjusted.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/initial_tailbone/zforwardEarth.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_01.04.26.174.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_01.04.26.174.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_01.04.26.174.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_01.04.26.174.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_01.04.26.174.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_01.04.26.174.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_01.04.26.174.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_01.04.26.174.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.05.59.871.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.05.59.871.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.05.59.871.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.05.59.871.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.05.59.871.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.05.59.871.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.05.59.871.PM/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.05.59.871.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.05.59.871.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.59.55.806.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.59.55.806.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.59.55.806.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.59.55.806.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.59.55.806.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.59.55.806.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.59.55.806.PM/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.59.55.806.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_04.59.55.806.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_12.34.03.333.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_12.34.03.333.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_12.34.03.333.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_12.34.03.333.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_12.34.03.333.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_12.34.03.333.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_12.34.03.333.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_26_2016_12.34.03.333.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.27.05.314.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/10_27_2016 data/10_27_2016_02.29.56.694.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_15_2016_02.34.45.349.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_15_2016_02.34.45.349.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_15_2016_02.34.45.349.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_15_2016_02.34.45.349.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_15_2016_02.34.45.349.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_15_2016_02.34.45.349.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_15_2016_02.34.45.349.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_15_2016_02.34.45.349.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.19.06.944.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.19.06.944.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.19.06.944.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.19.06.944.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.19.06.944.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.19.06.944.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.19.06.944.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.19.06.944.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.43.39.538.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.43.39.538.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.43.39.538.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.43.39.538.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.43.39.538.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.43.39.538.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.43.39.538.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/11_16_2016_05.43.39.538.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/AnalyzeGaitData.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/AnalyzePitchData.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/DataParser.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/FeatureIdentification.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Data Collection - Meeting with Kate Hamel.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/nonused data.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/data.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/front of foot 01 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 1/front of foot 01 - gait.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/front of ankle 02 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/front of ankle 02 - gait.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/imuAlgorithmsTest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 2/test2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 3/front of ankle 03 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/L front hip/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/L front hip/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/L front hip/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/L front hip/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/L front hip/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/L front hip/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/L front hip/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/L front hip/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/L front hip/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/R front hip/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/R front hip/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/R front hip/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/R front hip/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/R front hip/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/R front hip/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/R front hip/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/R front hip/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/R front hip/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 4/lateral foot 04 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/L heel/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/L heel/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/L heel/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/L heel/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/L heel/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/L heel/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/L heel/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/L heel/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/L heel/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/R heel/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/R heel/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/R heel/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/R heel/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/R heel/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/R heel/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/R heel/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/R heel/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/R heel/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 5/heel 05 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/L shin/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/L shin/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/L shin/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/L shin/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/L shin/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/L shin/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/L shin/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/L shin/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/L shin/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/R shin/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/R shin/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/R shin/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/R shin/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/R shin/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/R shin/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/R shin/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/R shin/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/R shin/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 6/shin 06 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/L shin/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/L shin/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/L shin/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/L shin/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/L shin/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/L shin/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/L shin/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/L shin/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/L shin/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/R shin/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/R shin/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/R shin/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/R shin/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/R shin/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/R shin/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/R shin/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/R shin/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/R shin/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/accel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/accel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/baro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/baro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/gyro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/gyro.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/mag.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/mag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/lumbar 07 - gait.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/Test 7/lumbar 07 - gait.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/Hamel Data  11292016/~$ta Collection - Meeting with Kate Hamel.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/TailboneAnalysis.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/VelocityData.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/extractUpRiteData.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/findPeaksForward.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/findRRPeaks.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/gaitInfo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/getAllUpRiteData.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/getFirstDifference.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/getFirstIntegration.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/getStrideVelocity.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/highPassFilter.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/imuData.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/imudata2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/integrateIMU.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/lowPassfilter.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/plotGyroAccel.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/positionImage.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/positionImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/saveCsv.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/saveSensorStructToCsv.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/xEarthDcRemovalAdjusted.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/xforwardEarth.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/yEarthDcRemovalAdjusted.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/yforwardEarth.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/z2.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/zEarthDcRemovalAdjusted.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/organized_init_tailbone/zforwardEarth.fig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/.main.py.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/main2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/mat_to_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Parsing Program/mat_to_dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Recorded-Time/.tailbone_analysis.py.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Recorded-Time/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Recorded-Time/data_check.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Recorded-Time/data_check2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Recorded-Time/ifempty.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_01.04.26.174.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_01.04.26.174.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_01.04.26.174.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_01.04.26.174.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_01.04.26.174.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_01.04.26.174.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_01.04.26.174.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_01.04.26.174.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.05.59.871.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.05.59.871.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.05.59.871.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.05.59.871.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.05.59.871.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.05.59.871.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.05.59.871.PM/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.05.59.871.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.05.59.871.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.59.55.806.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.59.55.806.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.59.55.806.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.59.55.806.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.59.55.806.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.59.55.806.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.59.55.806.PM/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.59.55.806.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_04.59.55.806.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_12.34.03.333.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_12.34.03.333.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_12.34.03.333.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_12.34.03.333.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_12.34.03.333.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_12.34.03.333.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_12.34.03.333.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_26_2016_12.34.03.333.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.02.13.914.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.05.48.727.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.08.33.900.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.11.37.345.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.15.42.886.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.20.20.966.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.23.56.088.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.27.05.314.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/10_27_2016 data/10_27_2016_02.29.56.694.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_15_2016_02.34.45.349.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_15_2016_02.34.45.349.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_15_2016_02.34.45.349.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_15_2016_02.34.45.349.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_15_2016_02.34.45.349.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_15_2016_02.34.45.349.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_15_2016_02.34.45.349.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_15_2016_02.34.45.349.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.19.06.944.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.19.06.944.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.19.06.944.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.19.06.944.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.19.06.944.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.19.06.944.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.19.06.944.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.19.06.944.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.43.39.538.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.43.39.538.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.43.39.538.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.43.39.538.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.43.39.538.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.43.39.538.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.43.39.538.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/11_16_2016_05.43.39.538.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/AnalyzeGaitData.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/AnalyzePitchData.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/C4-12-1A-F5-4C-1D.11_29_2016_10.32.10.141.AM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/CA-7E-86-CE-12-90.04_12_2017_03.12.34.468.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/DataParser.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/FeatureIdentification.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Data Collection - Meeting with Kate Hamel.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.01.11.349.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.03.36.829.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.05.23.558.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.08.54.897.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.11.07.331.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_01.17.56.326.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/C4-12-1A-F5-4C-1D.11_29_2016_12.55.20.238.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/LG KTE METAWEAR DATA/nonused data.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Nexus 7 METAWEAR DATA/C9-63-63-9C-04-D6.11_29_2016_01.17.55.758.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.01.10.852.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.03.36.440.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.05.23.162.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.08.54.385.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.11.07.123.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_01.17.55.972.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.42.38.864.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Prasanna METAWEAR DATA/FD-BE-D6-4F-06-AA.11_29_2016_12.55.20.290.PM/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, heel/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/data.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/R foot, tongue/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/front of foot 01 - gait.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 1/front of foot 01 - gait.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/L foot, tongue/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/R foot, tongue/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/front of ankle 02 - gait.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/front of ankle 02 - gait.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/imuAlgorithmsTest.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 2/test2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/L foot, tongue/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/R foot, tongue/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 3/front of ankle 03 - gait.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/L front hip/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/L front hip/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/L front hip/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/L front hip/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/L front hip/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/L front hip/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/L front hip/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/L front hip/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/L front hip/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/R front hip/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/R front hip/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/R front hip/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/R front hip/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/R front hip/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/R front hip/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/R front hip/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/R front hip/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/R front hip/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 4/lateral foot 04 - gait.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/L heel/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/L heel/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/L heel/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/L heel/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/L heel/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/L heel/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/L heel/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/L heel/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/L heel/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/R heel/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/R heel/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/R heel/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/R heel/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/R heel/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/R heel/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/R heel/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/R heel/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/R heel/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 5/heel 05 - gait.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/L shin/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/L shin/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/L shin/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/L shin/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/L shin/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/L shin/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/L shin/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/L shin/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/L shin/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/R shin/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/R shin/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/R shin/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/R shin/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/R shin/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/R shin/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/R shin/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/R shin/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/R shin/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 6/shin 06 - gait.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/L shin/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/L shin/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/L shin/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/L shin/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/L shin/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/L shin/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/L shin/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/L shin/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/L shin/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/R shin/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/R shin/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/R shin/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/R shin/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/R shin/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/R shin/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/R shin/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/R shin/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/R shin/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/accel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/accel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/baro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/baro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/gyro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/gyro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/mag.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/Tailbone/mag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/lumbar 07 - gait.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/Test 7/lumbar 07 - gait.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/Hamel Data  11292016/~$ta Collection - Meeting with Kate Hamel.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/TailboneAnalysis.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/VelocityData.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/extractUpRiteData.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/findPeaksForward.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/findRRPeaks.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/gaitInfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/getAllUpRiteData.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/getFirstDifference.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/getFirstIntegration.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/getStrideVelocity.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/highPassFilter.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/imuData.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/imudata2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/integrateIMU.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/lowPassfilter.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/plotGyroAccel.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/positionImage.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/positionImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/saveCsv.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/saveSensorStructToCsv.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/xEarthDcRemovalAdjusted.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/xforwardEarth.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/yEarthDcRemovalAdjusted.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/yforwardEarth.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/z2.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/zEarthDcRemovalAdjusted.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/GC_init_tailbone/zforwardEarth.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/.main.py.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/GC-Output-Confirm.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/GC_test_data.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/TO_HS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/difference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/filt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/find_peaks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/integrate_IMU.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/lowpass_mat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/mat_extract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/math_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/no_001.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/GC_tailbone_Analysis.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/GC_tailbone_Analysis.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/GC_tailbone_Analysis.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/GC_tailbone_Analysis.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/GC_tailbone_Analysis.synctex.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/GC_tailbone_Analysis.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/Untitled.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/Untitled.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/Untitled.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/Untitled.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/Untitled.synctex.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/output_file/output_0_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/stride.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/RS_to_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Parsing Program/RS_to_dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/imuDataE.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/imuDataF.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Parsing Program/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/names.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/test2.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Parsing Program/test_scripts/test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -766,17 +439,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="582" column="11" selection-start-line="582" selection-start-column="11" selection-end-line="582" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -795,8 +458,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="-117" />
+    <option name="x" value="240" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="937" />
   </component>
@@ -844,13 +507,6 @@
               <item name="uprite_analysis" type="462c0819:PsiDirectoryNode" />
               <item name="Analysis" type="462c0819:PsiDirectoryNode" />
               <item name="Tailbone" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="uprite_analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="uprite_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="Analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="Tailbone" type="462c0819:PsiDirectoryNode" />
-              <item name="Test_Analysis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -946,19 +602,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-117" width="1440" height="937" extended-state="0" />
-    <editor active="true" />
+    <frame x="240" y="23" width="1440" height="937" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21316166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2160229" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32857144" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5007153" side_tool="true" weight="0.5107143" />
+      <window_info anchor="bottom" id="Run" order="5" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32988358" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.3297619" />
-      <window_info anchor="bottom" id="Run" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="3" side_tool="true" weight="0.34676436" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.49928468" weight="0.5107143" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -991,6 +646,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8730">
+          <caret line="582" column="11" selection-start-line="582" selection-start-column="11" selection-end-line="582" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Analysis/Tailbone/Test_Analysis/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">

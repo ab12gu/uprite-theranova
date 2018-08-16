@@ -1,8 +1,8 @@
 #####
-# main file for gait data analysis
+# filename: main.py
 # By: Abhay Gupta
 #
-#
+# Description: extracts RS & UR data in matlab structs
 #
 ######
 
@@ -52,12 +52,13 @@ for c, filename in enumerate(os.listdir(input_directory)):
 		up_dir = ''.join(up_dir)
 
 		"""Parse through RS data"""
-		np = ['S', 'C', 'F']
+		walk_type = ['S', 'C', 'F']
+		offset = convert2.offset(directory)
 		
 		RS_data = {} #Create empty dict
-		for i in np:
+		for c, i in enumerate(walk_type):
 			RF_file = glob.glob(directory + '/' + i + 'P*')
-			RS_data[i] = convert2.fn(RF_file)
+			RS_data[i] = convert2.fn(RF_file, offset[c])
 
 		"""Converting mat struct file to python dict"""
 		print(1)

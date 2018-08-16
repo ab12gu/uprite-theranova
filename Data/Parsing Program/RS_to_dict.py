@@ -1,7 +1,32 @@
-#converts the RS data to a 2D numpy array
+# converts the RS data to a 2D numpy array
+#
+# also separates out initial pre-step data
+
+def offset(directory):
+	import glob # search incomplete filename
+	from openpyxl import load_workbook
+	import re
+	filename = glob.glob(directory + '/' + 'Theranova*')
+	
+	wb = load_workbook(filename = filename[0])
+	ws = wb['Sheet1']
+	col = [1]
+	output = []
+	for i, row in enumerate(ws.rows):
+		for c, cell in enumerate(row):
+			string = cell.value
+			if string == None or string[0] > '9' and string[0] != "T":
+				continue
+			if c in col:
+				step = re.findall(r'\d+', string)[-1]
+				if string.rfind('R') > string.rfind('L'):
+					output.append('Right ' + step)
+				else:
+					output.append('Left ' + step)
+	return output
 
 
-def fn(RS_file):
+def fn(RS_file, offset):
 	"""Parsing through Reference System (RS) data"""
 	
 	from datetime import datetime
@@ -41,7 +66,10 @@ def fn(RS_file):
 	np.put(row_labels2, [0, 3, 7, 8, 11] , 'Total')
 
 	for i in range(0,len(row_labels)):
-		row_labels[i] = row_labels.item(i) + '_' +  row_labels2.item(i)
+		if (i < 14):
+			row_labels[i] = row_labels.item(i) + '_' +  row_labels2.item(i)
+		else:
+			row_labels[i] = row_labels2.item(i)
 	
 	col_labels = a[0,2:]
 
@@ -78,9 +106,10 @@ def fn(RS_file):
 	data2 = data2.to_dict()
 	
 	#Primary data set
+	begin = row_labels.tolist().index(offset)
 	a = np.delete(a, range(42,47), axis = 1)
-	a = np.delete(a, [14], axis = 0)
-	row_labels = np.delete(row_labels, [14], 0)
+	a = np.delete(a, range(14,begin), axis = 0)
+	row_labels = np.delete(row_labels, range(14,begin), 0)
 	col_labels = np.delete(col_labels, range(42,47), 0)
 	
 	a = pd.DataFrame(a, index=row_labels,columns=col_labels)

@@ -82,11 +82,11 @@ with open('data_check.csv', 'w') as csvfile:
 				
 				# Store HS & TO data
 				if (side == 'R'):
-					RS['HS']['r'].append(HS)
-					RS['TO']['r'].append(TO)
+					RS['HS']['r'].append(float(HS))
+					RS['TO']['r'].append(float(TO))
 				elif (side == 'L'):
-					RS['HS']['l'].append(HS)
-					RS['TO']['l'].append(TO)
+					RS['HS']['l'].append(float(HS))
+					RS['TO']['l'].append(float(TO))
 				else: # data check
 					print('The index value is weird ', side)
 					quit()

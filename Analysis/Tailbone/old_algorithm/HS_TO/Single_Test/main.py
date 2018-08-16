@@ -9,10 +9,10 @@ import sys
 import os
 
 # Don't know if necessary rn...
-p = os.path.abspath('../../../../../../Data/Parsing Program/')
+p = os.path.abspath('../../../../../Data/Parsing Program/')
 sys.path.append(p)
 
-p = os.path.abspath('../../../../Python/')
+p = os.path.abspath('../../Python/')
 sys.path.append(p)
 
 # Library imports
