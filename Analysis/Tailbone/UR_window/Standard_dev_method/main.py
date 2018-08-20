@@ -88,17 +88,17 @@ for c, filename in enumerate(os.listdir(input_directory)):
 
 	# Calculate ranges of appropriate gravity vector
 	threshold = 0.03 # Maximum allowable standard deviation
-	size = 10	
+	size = 100
 	intervals = {}
 	for w in orientation:
-		intervals[w] = low_stdev(accel_data[w], threshold)
-		#intervals[w] = all_low_stdev(accel_data[w], threshold, size)	
+		#intervals[w] = low_stdev(accel_data[w], threshold)
+		intervals[w] = all_low_stdev(accel_data[w], threshold, size)	
 		plt.figure(dpi = 300)
 		plt.plot(accel_data['x'])
-		plt.axvline(intervals[w][0], color = 'r', linestyle = '--')
-		plt.axvline(intervals[w][1], color = 'r', linestyle = '--')
+		for i in range(0, len(intervals[w])):
+			plt.axvline(intervals[w][i][0], color = 'r', linestyle = '--')
+			plt.axvline(intervals[w][i][1], color = 'b', linestyle = '--')
 		plt.show()
-		quit()
 	quit()
 	#plt.plot(accel_data['z'])
 	#plt.show()

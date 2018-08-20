@@ -44,6 +44,7 @@ def window(signal, width, threshold, influence):
 		# adjust the filters
 		avg_filter[i] = stats.mean(filtered_signal[i-width:i+1])
 		std_filter[i] = 
+= np.std(filteredY[(i-lag):i])
 
 
 

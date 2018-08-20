@@ -9,7 +9,7 @@
 #
 
 
-def extract(data, RS_data, padding):
+def extract(data, RS_data, padding = 0):
 	from datetime import datetime
 	UR_time = data['UR']['datetime']
 	

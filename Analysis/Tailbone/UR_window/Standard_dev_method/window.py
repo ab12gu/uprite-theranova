@@ -49,6 +49,8 @@ def all_low_stdev(data, threshold, size):
 	list_so_far = []
 	list_ending_here = []
 	interval = []
+	temp_start_index = temp_end_index = 0
+
 	for i, x in enumerate(zip(data[::2], data[1::2]), 1):
 		j = i*2
 		x = list(x)
@@ -61,18 +63,22 @@ def all_low_stdev(data, threshold, size):
 				list_ending_here.extend(x)
 				temp_end_index += 2
 			else:
+				if ((temp_end_index - temp_start_index) > size):
+					interval.append([temp_start_index, temp_end_index])
 				list_ending_here = x
 				temp_start_index = j
 				temp_end_index = j+1
 			mean = stats.mean(list_ending_here)
 		else:
+			if ((temp_end_index - temp_start_index) > size):
+				interval.append([temp_start_index, temp_end_index])
 			list_ending_here = []
 		
 		if (size < len(list_ending_here) > len(list_so_far)):
 			list_so_far = list_ending_here[:]
 			start_index = temp_start_index
 			end_index = temp_end_index
-			interval.append([start_index, end_index])
 
+	interval.append([start_index, end_index])	
 	return interval
 	
