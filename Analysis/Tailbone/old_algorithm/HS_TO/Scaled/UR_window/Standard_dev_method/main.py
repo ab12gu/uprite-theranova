@@ -17,27 +17,36 @@ plt.rcParams['lines.linewidth'] = 0.5
 import time as clocktime
 from numpy.linalg import inv
 from copy import deepcopy
+from pathlib import Path
 
 # Custom function imports
 import filt
-p = os.path.abspath('../../../Python/')
+root = str(Path(os.path.abspath(__file__)).parents[8]) # Create a root directory
+p = os.path.abspath(root + \
+		'/uprite_analysis/Analysis/Tailbone/old_algorithm/Python')
+
 sys.path.append(p) # used for importing custom functions
 from math_func import my_round
-p = os.path.abspath('../../../../../../Data/Parsing Program/')
+p = os.path.abspath(root + '/uprite_analysis/Data/Parsing Program/')
 sys.path.append(p) 
 from custom_functions import *
 import print_struct as visual
 import reference_check as dif
+from window import low_stdev
+from window import all_low_stdev
 
 # Change plot line width
 plt.rcParams['lines.linewidth'] = 0.5
 
 # Directories
-input_directory = '../../../../../../../AG_Parsed_Data/Structs'
-RS_directory =  '../../../../../../../AG_Parsed_Data/RS'
-output_directory = '../../../../../../../AG_parsed_Data/UR'
+input_directory = root + '/AG_Parsed_Data/Structs'
+RS_directory =  root + '/AG_Parsed_Data/RS'
+output_directory = root + '/AG_parsed_Data/UR'
 
 start_time = clocktime.time()
+pace = ['S', 'C', 'F']
+orientation = ['x', 'y', 'z']
+
 # Iterate trough every patient file
 for c, filename in enumerate(os.listdir(input_directory)):
 	
@@ -61,10 +70,11 @@ for c, filename in enumerate(os.listdir(input_directory)):
 		continue
 
 	#visual.print_keys(RS_data,10)
+
+	# Find start-time through datestamp comparision
 	padding = 0 # in seconds
 	interval, len_RS, len_UR, window, offset = \
 		dif.extract(data, RS_data, padding)
-	pace = ['S', 'C', 'F']
 	for w in pace: 
 		interval[w] = [my_round(x*100) for x in interval[w]]
 
@@ -75,17 +85,24 @@ for c, filename in enumerate(os.listdir(input_directory)):
 	accel_data = data['UR']['sensorData']['tailBone']['accel']['data']
 	gyro_data = data['UR']['sensorData']['tailBone']['gyro']['data']
 
+
+	# Calculate ranges of appropriate gravity vector
+	threshold = 0.03 # Maximum allowable standard deviation
+	size = 10	
+	intervals = {}
+	for w in orientation:
+		intervals[w] = low_stdev(accel_data[w], threshold)
+		#intervals[w] = all_low_stdev(accel_data[w], threshold, size)	
+		plt.figure(dpi = 300)
+		plt.plot(accel_data['x'])
+		plt.axvline(intervals[w][0], color = 'r', linestyle = '--')
+		plt.axvline(intervals[w][1], color = 'r', linestyle = '--')
+		plt.show()
+		quit()
+	quit()
 	#plt.plot(accel_data['z'])
 	#plt.show()
-	# data starts a 0; therefore first few points are garbage
-	accel_data['x'] = accel_data['x'][4:]
-	accel_data['x'] = accel_data['x'][4:]
-	accel_data['x'] = accel_data['x'][4:]
 
-	gyro_data['x'] = gyro_data['x'][4:]
-	gyro_data['x'] = gyro_data['y'][4:]
-	gyro_data['z'] = gyro_data['z'][4:]
-	
 	# Get gravity by putting low acceleration trough low pass filter...
 	f_cuts = [0.1/50, 0.7/50] # Passband & Stopband cutoffs
 	fs = 100
