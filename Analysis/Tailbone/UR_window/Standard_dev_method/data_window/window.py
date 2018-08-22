@@ -8,6 +8,7 @@
 # Finds the longest minimum standard deviation range
 # Need to break into pairs, because no standard deviation of single value
 # Worked well with threshold = 0.03 for accel_data of patient_009
+
 def low_stdev(data, threshold):
 	import statistics as stats
 	from statistics import stdev
@@ -147,5 +148,44 @@ def datestamp(data, RS_data, padding = 0):
 	
 	#return(interval, len_RS, len_UR, window, recording_offset)
 	return interval
+
+# finds the window closest to current window
+def search(window, data):
+	start = window[0]
+	end = window[1]
+	span = end - start
+	distance = 0	
+
+	index = 0
+	for i, window in enumerate(data):
+		import statistics as stats	
+	
+		if window[2] > 1/3*span:
+			
+			start_dif = abs(start - window[0])
+			end_dif = abs(end - window[1])
+			temp = start_dif + end_dif
+			
+			if distance < 1/temp:
+				distance = 1/temp
+				index = i
+
+	start = data[index][0]
+	end = data[index][1]
+
+	if (data[index][2] < span):
+		center = (start + end)/2
+		start = center - span/2
+		end = center + span/2
+
+	return (start, end) 
+
+
+
+
+
+
+
+
 
 

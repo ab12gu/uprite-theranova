@@ -2,7 +2,7 @@
 # filename: main.py
 # by: Abhay Gupta
 #
-# Description: Find windows of relevant recorded data from UR based on RS data
+# Description: Run GC's script on all UR data/gravity windows
 #
 
 # Library imports
@@ -18,33 +18,48 @@ from copy import deepcopy
 
 # Custom function imports
 from pathlib import Path
-root = str(Path(os.path.abspath(__file__)).parents[6]) # Create a root directory
+root = str(Path(os.path.abspath(__file__)).parents[5]) # Create a root directory
 p = os.path.abspath(root + '/uprite_analysis/') # for custom functions
 sys.path.append(p)
 from custom_functions import *
-from window import *
 
 # Change plot line width
 plt.rcParams['lines.linewidth'] = 0.5
 
 # Directories
-input_directory = root + '/AG_Parsed_Data/Structs'
-RS_directory =  root + '/AG_Parsed_Data/RS'
-output_directory = root + '/AG_parsed_Data/UR/Accel/test_data'
-
 start_time = clocktime.time()
+input_directory = root + '/AG_parsed_data/Structs/'
+gravity_input_dir = root + '/AG_Parsed_Data/UR/gravity_windows'
+data_input_dir =  root + '/AG_Parsed_Data/UR/data_windows'
+output_directory = root + '/AG_parsed_Data/UR/HS_TO/Direct_GC'
+
 pace = ['S', 'C', 'F']
 coordinates = ['x', 'y', 'z']
-counter = 0
+orientation = ['r', 'l']
 
 # Iterate trough every patient file
-for c, filename in enumerate(os.listdir(input_directory)):
-	if c < 75:
-		continue
+for c, filename in enumerate(os.listdir(data_input_dir)):
 
+	# Extract Patient Number
 	patient_number = filename.split('.')[0]
 	print("Extracting data for patient:", patient_number)
 	print("Current Patient iteration:", c)
+	
+	# Open data_file, gravity_window, data_window
+	data_file = os.path.join(input_directory, filename)
+	data_window_file = os.path.join(data_input_dir, filename)
+	gravity_window_file = os.path.join(gravity_input_dir, filename)
+	with open(data_file, 'rb') as afile: 
+		data = pickle.load(afile) # Import all patient data
+	with open(data_window_file, 'rb') as afile:
+		data_window = pickle.load(afile) # Import data windows
+	with open(gravity_window_file, 'rb') as afile:
+		gravity_window = pickle.load(afile) # Import gravity windows
+
+	# Store gravity vector
+	
+
+	quit()
 
 	"""Extract Pickle Data"""
 	# open file	all data, and reference system HS_TO data

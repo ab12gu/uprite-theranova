@@ -43,22 +43,7 @@ with open(pickle_file, 'rb') as afile:
 
 # Extract only tailbone acceleration data
 accel_data = data['UR']['sensorData']['tailBone']['accel']['data']
-plt.figure()
-plt.plot(accel_data['x'])
-plt.plot(accel_data['y'])
-plt.plot(accel_data['z'])
 
-plt.figure()
-plt.plot(accel_data['x'][249:450])
-plt.plot(accel_data['y'][249:450])
-plt.plot(accel_data['z'][249:450])
-plt.show()
-
-plt.plot(accel_data['x'][0:200])
-plt.plot(accel_data['z'][0:200])
-plt.plot(accel_data['y'][0:200])
-plt.show()
-quit()
 # Remove initial scrap data
 accel_data['x'] = accel_data['x'][4:]
 accel_data['y'] = accel_data['y'][4:]
