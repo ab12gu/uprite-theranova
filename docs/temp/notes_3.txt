@@ -1,0 +1,24 @@
+08/06/18 Meeting Notes
+
+Check new data if outputting all parameters...
+`:generalize HS/TO
+-> run on on all datasets
+-> achieve under 5% error
+
+Remove all outliers (not working with alg, due to walking issues)
+-> analyze outliers later (seperate algorithm)
+-> show what failed and what passed with comparision to reference data
+
+Methods of analysis:
+-> GC's method of cutoff ranges (steady state + envolope barute)
+-> New method of wavelet form
+
+May need to offset both sides of data
+
+
+
+Later -> noise reduction algorithm
+-> allows filter optimization for isolating peaks and troughs
+
+->keep git log of version changes
+

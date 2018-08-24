@@ -1,1 +1,0 @@
-sampRate: 0.5 Hz,	scale: 256.0/meter,	Format (by byte): A0 A1 A2 A3

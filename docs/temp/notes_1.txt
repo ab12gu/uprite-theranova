@@ -1,0 +1,43 @@
+ONLY ISSUE (Big issue):
+Gravity accel vector uses values at 0.1 Hz to 0.7Hz fcut values...
+(basically means smaller than estimated gravity vector...
+
+Data output matches!
+2 steps left:
+Second, re-write only necessary system paramters
+Third, check if really the gravity vector made any difference
+Fourth, get a rough analysis on all data (dank)
+
+NO MORE FUCKING MATLAB :)
+
+
+
+
+Code Updates:
+
+lowpassfilter: (filter of 5 Hz) x/50 = 0.1
+removed fsamp from line 16
+
+tailbone anl.
+lowpassfilter:
+divided fcuts by 50 (Ny)
+fcuts were [10 11] LINE 485
+
+featureident.
+divide fcuts by 50... Line 7
+
+
+Notes:
+Only incorrect lowpassfilter is first filter
+
+tailbone analysis: 
+The gravity accel vector (low passed data used as a gravity vector): was much smaller
+than GC tested with.... 
+GC's estimated LPF-G = estimated 5 or 10 hz... (couldn't tell which one)
+GC's used LPF-G = 0.1 Hz with 0.7 stopband
+----> much lower gravity vector therefore not much low pass filtering at all...
+
+earth_filt['x'] used a 10 Hz filter (11 stopband)
+
+angular_pos[2]['z'] used a 5 Hz filter (6 stopband)
+

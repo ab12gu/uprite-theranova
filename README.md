@@ -2,7 +2,7 @@
 
 #### Motivation
 
-The study of gait (a person's manner of walking) is greatly studied to be used for signs of deterioration. The main medical systems utilized for gait analysis either are too expensive being at $2,000+ or don't integrate specific study analysis into the system. The new product will be made from ground up, starting with purchasing an off the shelf bluetooth capable, integrated accelerometer and gyroscope. Using the off-the-shelf product, a data analysis software will be built to record the gait parameters of a person wearing the sensoor. This product is called the UpRite sensor.
+The study of gait (a person's manner of walking) is greatly studied to be used for signs of deterioration (signs showing high risk of fall and early signs of dementia). The main medical systems utilized for gait analysis either are too expensive being at $2,000+ or don't integrate specific study analysis into the system. The new product will be made from ground up, starting with purchasing an off the shelf bluetooth capable, integrated accelerometer and gyroscope. Using the off-the-shelf product, a data analysis software will be built to record the gait parameters of a person wearing the sensor. This product is called the UpRite sensor.
 
 #### Data Acquisition
 
@@ -11,51 +11,22 @@ In order to produce a robust algorithm, data is needed to be produced to affirm 
 The relevant recorded data from the Zeno Walkway is the toe-off and heel-strike data from each step and the velocity data. The relevant recorded data from the UpRite Sensor will be the sampling time, 3-dimensional acceleration, and 3-dimensional angular velocity. This data aquisition will be used to calculate the gait parameters.
 
 #### Project Description
-
 This is a robust codebase for extracting gait parameter data from [MetaSensor](https://mbientlab.com/product/clip-sensor-research-kit/). 
+
+## Installation
+
+To install UpRite Analysis from source, first clone repository and then run:  `python setup.py install`  
+Actually, you just need to run:  `pipenv install`  
 
 ## Deployment
 
-> Switch GC's data from matlab to python  
-> PWD: 'uprite_analysis/Data/Parsing Program/'  
-> Output: 
+Open a virtual environment from root of repository:  `pipenv shell`  
+Open up the scripts folder and run script: `pythonw python_structure.py`  
+Note: read README.md in scripts folder to understand what is happening.  
 
-Flag the data that is empty from UR
-PWD: 'uprite_analysis/Analysis/Check_Recorded_Data'
-Output: Flag empty data in struct & empty_data_check.csv file
+## Results  
 
-Run single file test analysis [GC alg] 
-PWD: 'uprite_analysis/Analysis/Tailbone/Python/'
-Output: 
-
-Extract TO & HS from RS
-PWD: 'uprite_analysis/Analysis/Tailbone/HS_TO/Scaled/RS_extract'
-Output:
-
-Extract Data window from UR
-PWD: 'uprite_anlaysis/Analysis/Tailbone/UR_window/Standard_dev_method/data_window/'
-Output:
-
-Extract Gravity Window from UR
-PWD: 'uprite_anlaysis/Analysis/Tailbone/UR_window/Standard_dev_method/gravity_window/'
-Output:
-
-Extract TO & HS from UR
-PWD: 'uprite_analysis/Analysis/tailbone/old_algorithm/TO_HS/'
-Output: 
-PWD: 
-
-Calculate Gait Parameters from RS
-PWD:
-
-Calculate Gait Parameters from UR
-PWD:
-
-Compare Gait Parameters from RS & UR
-PWD:
-
-
-## Viewable Excel Documents:
+All results are within the docs folder.
 
 ## Production Summary
 
@@ -63,6 +34,7 @@ PWD:
 - Analysis of UR data to provide gait parameters
 - Comparison of data with a reference system
 - Display results
+- Adjust analysis algorithm if results are not satisfactory
 
 ## Authors
 

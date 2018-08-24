@@ -1,5 +1,0 @@
-sampRate, 100,
-sampRateUnits, Hz,
-scale, 8192,
-scaleUnits, G,
-rawData_x,rawData_y,rawData_z,rawData_seconds,data_x,data_y,data_z,data_seconds,

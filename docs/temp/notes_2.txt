@@ -1,0 +1,22 @@
+Need to find gravity vector
+
+You can organize it from min -> max and then run chauvnet's algorithm... same way person on stack overflow did it...
+
+worked!
+
+RS saving file: TO/HS for now
+
+HS_TO direct gc (close)
+
+Accel_window (first):
+- Present User with datestamp window in single shade
+- Shade regions and have user pick window
+- Have recommended windows in specific highlight (close to RS)
+- Show window lengths in comparision to reference system
+- Allow for user to rerun algorithm with varying the parameters
+
+Gravity_window (second):
+- Do the same thing
+
+GC algorithm:
+- Straight copy and run on all data
