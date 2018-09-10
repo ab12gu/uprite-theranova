@@ -62,8 +62,10 @@ def extract(directory):
 	check = 0
 	
 	while(check == 0):	
+		plt.close()
 		plt.plot(accel_data['z'])
 		plt.axvspan(gravity[-1][0], gravity[-1][1], color = 'blue', alpha = 0.5)
+		plt.title('accel z')
 		plt.show(block = False)
 		
 		# Ask user if this is appropriate start window 
@@ -72,11 +74,18 @@ def extract(directory):
 			window = [gravity[-1][0], gravity[-1][1]]
 		else:
 			gravity = gravity[:-1]
-		plt.close()
 
 	with open(os.path.join(directory, 'gravity_window.pkl'), 'wb') as afile:
 		pickle.dump(window, afile)
 
+	# save plot 
+
+	home = '../../figures/tailbone/' 
+	home = os.path.join(home, patient_number)
+
+	output = os.path.join(home, 'accel_gravity_window.pdf')
+	plt.savefig(output)
+	plt.close()
 
 	print('Successful run!') 
 	print('-----------RUNTIME: %s second ----' % (clocktime.time() - start_time))
@@ -92,7 +101,7 @@ def input_check(directory, folder_type):
 		for c, filename in enumerate(os.listdir(directory)):
 			if c < 0:
 				continue
-			if fileaname == '.DS_Store':
+			if filename == '.DS_Store':
 				continue
 
 			print("Current patient iteration: ", c)

@@ -41,7 +41,7 @@ def convert(RS_file, offset):
 	import re
 	import itertools
 
-	from utils.custom_functions.struct_functions import file_len
+	from utils.data_structure_functions.struct_functions import file_len
 
 	# Show full arrays for np:
 	np.set_printoptions(threshold=np.inf)

@@ -73,58 +73,14 @@ def lowpass(data, f_cuts, fsamp, ripple_tol):
 	cutoff = (f_cuts[1] + f_cuts[0]) / 2
 
 	# Create FIR Filter
-	h = signal.firwin(numtaps, cutoff, window=('kaiser', beta), scale=False, pass_zero=True)
+	h = signal.firwin(numtaps, cutoff, window=('kaiser', beta), scale=False, \
+		pass_zero=True)
 
-	return data_fil(data, h, pass_zero = True)
-
-def general(data, f_cuts, fsamp, ripple_tol, filter_type):
-
-	from scipy import signal
-	import math as m
-
-	# Nyquist frequency
-	Ny = fsamp / 2
-
-	# Width of the transition band
-	width = f_cuts[1] - f_cuts[0]
-
-	# Single parameter to controlling max allowable pb & sb ripple
-	ripple_tol = min(ripple_tol)
-	ripple_tol = -20 * m.log10(ripple_tol)
-
-	# Determine the length of filter & shape parameter for kaiser window
-	numtaps, beta = signal.kaiserord(ripple_tol, width)
-
-	# Center of transition window
-	cutoff = (f_cuts[1] + f_cuts[0]) / 2
-	
-	if (filter_type == 'high'):
-		zero_pass = False
-		if (numtaps % 2 == 0) and (cutoff < Ny):
-			numtaps += 1
-	else:
-		zero_pass = True
-
-	# Create FIR Filter
-	h = signal.firwin(numtaps, cutoff, window=('kaiser', beta), scale=False, pass_zero=zero_pass)
-
-	return data_fil(data, h, zero_pass)
-
-
-def highpass(data, fs, cutoff):
-	from scipy import signal
-
-	order = 900
-	numtaps = order + 1
-	Ny = fs / 2
-	cutoff = cutoff / (Ny)
-	coeff = signal.firwin(numtaps, cutoff, pass_zero=False)
-
-	return data_fil(data, coeff)
+	return data_fil(data, h, pass_zero=True)
 
 
 # High pass FIR filter
-def highpass_gc(data, fs, cutoff):
+def highpass(data, fs, cutoff):
 	from scipy import signal
 
 	order = 900

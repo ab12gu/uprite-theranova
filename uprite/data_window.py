@@ -19,6 +19,7 @@ from copy import deepcopy
 # Custom function imports
 from utils.math_functions.general_math import my_round
 from utils.signal_analysis.window import * 
+from utils.directory_functions.mkdir_path import mkdir_path 
 
 # Change plot line width
 plt.rcParams['lines.linewidth'] = 0.5
@@ -86,7 +87,6 @@ def extract(directory):
 	# Initialize some data
 	window = {}
 	check = 0
-	counter = 0
 	prev_max = math.inf
 
 	# Ask user if values are window is accurate and record data
@@ -135,7 +135,7 @@ def extract(directory):
 			start = center - zeno_wind[w][2]/2
 			end = center + zeno_wind[w][2]/2
 		plt.axvspan(start, end, color='y', linewidth=3)
-		window['S'] = [start, end]
+		window['S'] = [my_round(start), my_round(end)]
 		
 		# Use zeno datestamp to find Calm & Fast windows.	
 		# Calm window:	
@@ -151,6 +151,7 @@ def extract(directory):
 		start, end = search([start, end], intervals[d]['unsteady'])
 		plt.axvspan(start, end, color='lime', linewidth=3)
 		window['F'] = [start, end]
+		plt.title('accel x')
 
 		indices = [start, end]	
 		plt.show(block = False)			
@@ -164,25 +165,59 @@ def extract(directory):
 			window['flag']['S'] = 1
 			window['flag']['C'] = 1
 			window['flag']['F'] = 1
-			counter += 1
-			print(counter)
 			continue
 
-		check = int(input("Enter 0 if first window is wrong (else 1): "))
+		check = int(input("Enter 0 if first window should be recalculated (else 1): "))
 		if check == 0:
 			continue
 		
 		window['flag'] = {}
-		window['flag']['auto'] =int(input("Enter 0 if no auto data (else 1): "))
-		if window['flag']['auto'] != 0:
-			counter += 1	
-			print(counter)
+		window['flag']['auto'] =int(input("Enter 0 if algorithm isn't working (else 1): "))
 		window['flag']['S'] = int(input("Enter 0 if no slow data (else 1): "))
 		window['flag']['C'] = int(input("Enter 0 if no calm data (else 1): "))
 		window['flag']['F'] = int(input("Enter 0 if no fast data (else 1): "))
 	
 	with open(os.path.join(directory, 'data_window.pkl'), 'wb') as afile:
 		pickle.dump(window, afile)
+
+	# save plots of files
+
+	if window['flag']['F'] == 0:
+		return
+
+	speed = ['slow', 'calm', 'fast']
+	home = '../../figures/tailbone/' 
+	home = os.path.join(home, patient_number)
+
+	output = os.path.join(home, 'accel_window.pdf')
+	plt.savefig(output)
+	plt.close()
+
+	gyro_data = data['UR']['sensorData']['tailBone']['gyro']['data']
+
+	for c,p in enumerate(pace):
+		output_dir = os.path.join(home, speed[c])
+		mkdir_path(output_dir)
+		plt.close('all')
+
+		plt.plot(accel_data['x'][window[p][0]:window[p][1]])
+		plt.plot(accel_data['y'][window[p][0]:window[p][1]])
+		plt.plot(accel_data['z'][window[p][0]:window[p][1]])
+		plt.legend(['x', 'y', 'z'])
+
+		output = os.path.join(output_dir, 'accel_data.pdf')
+		plt.savefig(output)
+		plt.close()
+
+		plt.plot(gyro_data['x'][window[p][0]:window[p][1]])
+		plt.plot(gyro_data['y'][window[p][0]:window[p][1]])
+		plt.plot(gyro_data['z'][window[p][0]:window[p][1]])
+		plt.legend(['x', 'y', 'z'])
+
+		output = os.path.join(output_dir, 'gyro_data.pdf')
+		plt.savefig(output)
+		plt.close()
+
 
 	print('Successful run!') 
 	print('-----------RUNTIME: %s second ----' % (clocktime.time() - start_time))
@@ -196,7 +231,7 @@ def input_check(directory, folder_type):
 		start_time = clocktime.time()
 		# Iterate trough every patient file
 		for c, filename in enumerate(os.listdir(directory)):
-			if c < 75:
+			if c < 58:
 				continue
 			if (filename == '.DS_Store'):
 				continue

@@ -164,7 +164,7 @@ def forward(signal, search_size, min_distance, max_distance, fs):
 	else:
 		heart_rate = None
 	
-	return peaks_found #, low_to_high_locs, high_to_low_locs, heart_rate
+	return peaks_found, low_to_high_locs, high_to_low_locs, heart_rate
 
 
 

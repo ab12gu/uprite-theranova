@@ -42,7 +42,7 @@ def low_stdev(data, threshold):
 		
 	return [start_index, end_index]
 
-# Records every low-stdev range
+# Records every low-stdev range O(n)
 def all_low_stdev(data, threshold, size):
 	import statistics as stats
 	from statistics import stdev
@@ -51,6 +51,8 @@ def all_low_stdev(data, threshold, size):
 	list_ending_here = []
 	interval = []
 	temp_start_index = temp_end_index = 0
+	list_size = 0
+	list_sum = 0
 
 	for i, x in enumerate(zip(data[::2], data[1::2]), 1):
 		j = i*2
@@ -60,9 +62,15 @@ def all_low_stdev(data, threshold, size):
 				list_ending_here = x
 				temp_start_index = j
 				temp_end_index = j+1
+				mean = stats.mean(list_ending_here)
+				list_size = 0
+				list_sum = 0
 			elif not False in [abs(y - mean) < threshold for y in x]:
 				list_ending_here.extend(x)
 				temp_end_index += 2
+				list_size += 2
+				list_sum = sum([list_sum] + x)
+				mean = list_sum/list_size
 			else:
 				if ((temp_end_index - temp_start_index) > size):
 					interval.append([temp_start_index, temp_end_index, \
@@ -70,7 +78,9 @@ def all_low_stdev(data, threshold, size):
 				list_ending_here = x
 				temp_start_index = j
 				temp_end_index = j+1
-			mean = stats.mean(list_ending_here)
+				mean = stats.mean(list_ending_here)
+				list_size = 0
+				list_sum = 0
 		else:
 			if ((temp_end_index - temp_start_index) > size):
 				interval.append([temp_start_index, temp_end_index, \
@@ -151,6 +161,8 @@ def datestamp(data, RS_data, padding = 0):
 
 # finds the window closest to current window
 def search(window, data):
+	from utils.math_functions.general_math import my_round
+
 	start = window[0]
 	end = window[1]
 	span = end - start
@@ -177,6 +189,9 @@ def search(window, data):
 		center = (start + end)/2
 		start = center - span/2
 		end = center + span/2
+
+	start = my_round(start)
+	end = my_round(end)
 
 	return (start, end) 
 

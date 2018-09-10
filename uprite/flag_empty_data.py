@@ -13,9 +13,11 @@ import os
 import pickle
 import csv
 from itertools import product
+import matplotlib.pyplot as plt
 
 # custom package imports
 from utils.visualize_structure import visualize_structure as visual # see dictionary structure
+from utils.directory_functions.mkdir_path import mkdir_path 
 
 # global variables
 top = ['Presents the amount of recorded time per patient (in seconds) by UpRite Sensors']
@@ -32,7 +34,7 @@ def flag(input_directory, writer):
 	
 	# Find if data is empty. Store in csv file and overwrite pickle file.
 	print('Extracting Pickle Data')
-	patient_name = input_directory[-6:]
+	patient_number = input_directory[-6:]
 	pickle_file = os.path.join(input_directory, modifier)
 	with open(pickle_file, 'rb') as afile:
 		data = pickle.load(afile)
@@ -40,12 +42,12 @@ def flag(input_directory, writer):
 	print('Find if data is empty')
 	# Initialize values 
 	check_data = data['UR']['sensorData']
-	print(patient_name)
+	print(patient_number)
 	output = {}
 	data['Flags'] = {}
 	counter = 0
 	
-	print('Checking file ', patient_name)
+	print('Checking file ', patient_number)
 	for i in range(0,len(sensor_loc)):
 		data['Flags'][sensor_loc[i]] = {}
 		
@@ -68,7 +70,7 @@ def flag(input_directory, writer):
 			output[counter] = str(out)
 			counter += 1
 		
-	out = {patient_label[0]: patient_name}
+	out = {patient_label[0]: patient_number}
 	for n in range(0,counter):
 		out[header_names[n+1]] = output[n]
 
@@ -82,6 +84,37 @@ def flag(input_directory, writer):
 	# with open(pickle_file, 'rb') as afile:
 	#	data = pickle.load(afile)
 	#	visual.print_keys(data, 9)
+
+	if 'tailBone' not in check_data:
+		return
+
+	print('Saving plots')
+
+	# save plots of files
+	home = '../../figures/tailbone/' 
+	output_dir = os.path.join(home, patient_number)
+	mkdir_path(output_dir)
+
+	accel = check_data['tailBone']['accel']['data']
+	gyro = check_data['tailBone']['gyro']['data']
+
+	plt.plot(accel['x'])
+	plt.plot(accel['y'])
+	plt.plot(accel['z'])
+	plt.legend(['x', 'y', 'z'])
+
+	output = os.path.join(output_dir, 'accel_raw.pdf')
+	plt.savefig(output)
+	plt.close()
+	
+	plt.plot(gyro['x'])
+	plt.plot(gyro['y'])
+	plt.plot(gyro['z'])
+	plt.legend(['x', 'y', 'z'])
+
+	output = os.path.join(output_dir, 'gyro_raw.pdf')
+	plt.savefig(output)
+	plt.close()
 
 def input_check(directory, folder_type):
 	"""Save if the data is empty depending on folder type"""
@@ -114,8 +147,8 @@ def input_check(directory, folder_type):
 if __name__ == '__main__':
 	print('Running test files... skipping GUI')
 
-	# folder_name = 'n'
-	# directory = '../../data_files/analyzed_data/no_002'
-	folder_name = 'y'
-	directory = '../../data_files/analyzed_data/'
+	folder_name = 'n'
+	directory = '../../data_files/analyzed_data/no_003'
+	#folder_name = 'y'
+	#directory = '../../data_files/analyzed_data/'
 	input_check(directory, folder_name)
