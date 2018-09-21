@@ -45,11 +45,27 @@ def extract(directory, output):
 		double_start_step = 'no'
 		double_end_step = 'no'
 		count = 0
+
+		import matplotlib.pyplot as plt
+		from matplotlib.widgets import Cursor
+
+		#heel = list(map(float, df.iloc[14:,0].tolist()))
+		#toe = list(map(float, df.iloc[14:,1].tolist()))
+
+		#fig = plt.figure(figsize=(11, 7))
+		#ax = fig.add_subplot(1, 1, 1)
+		#for i in range(0, len(toe)):
+			#ax.axvline(x=toe[i], color = 'r')
+		#for i in range(0, len(heel)):
+			#ax.axvline(x=heel[i], color = 'b')
+		#print(type(heel[1]))
+		#cursor = Cursor(ax, useblit=True, color='k', linewidth=1)
+		#plt.show()
 		
 		# iterate through all steps
 		for i in range(14,len(df.index)):
-			HS = df.iloc[i,0]
-			TO = df.iloc[i,1]
+			HS = float(df.iloc[i,0])
+			TO = float(df.iloc[i,1])
 	
 			side = df.index[i][0]
 			
@@ -80,9 +96,24 @@ def extract(directory, output):
 			else: # data check
 				print('The index value is weird ', side)
 				quit()
-
+	
 			prev_side = side
-			count += 1
+			count += 1		
+		
+		print(zeno)
+		fig = plt.figure(figsize=(11, 7))
+		ax = fig.add_subplot(1, 1, 1)
+		for i in range(0, len(zeno['HS']['r'])):
+			ax.axvline(x=zeno['HS']['r'][i], color = 'r')
+		for i in range(0, len(zeno['HS']['l'])):
+			ax.axvline(x=zeno['HS']['l'][i], color = 'b')
+		for i in range(0, len(zeno['TO']['r'])):
+			ax.axvline(x=zeno['TO']['r'][i], color = 'g')
+		for i in range(0, len(zeno['TO']['l'])):
+			ax.axvline(x=zeno['TO']['l'][i], color = 'k')
+		cursor = Cursor(ax, useblit=True, color='k', linewidth=1)
+		plt.show()
+
 		head[w] = zeno
 		output.writerow([patient_name, w, count, double_start_step, double_end_step])
 	
@@ -118,8 +149,8 @@ if __name__ == '__main__':
 	directory = '../../data_files/analyzed_data'
 	foldertype = 'y'
 	
-	#directory = '../../data_files/analyzed_data/no_025'
-	#foldertype = 'n'
+	directory = '../../data_files/analyzed_data/no_131'
+	foldertype = 'n'
 	input_check(directory, foldertype)
 
 

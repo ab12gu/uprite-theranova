@@ -59,6 +59,6 @@ def accel_spikes(accel, gyro_peaks):
 		
 		all_accel_peaks = all_accel_peaks + accel_peak
 
-	return(all_accel_peaks)
+	return(all_accel_peaks, accel)
 
 

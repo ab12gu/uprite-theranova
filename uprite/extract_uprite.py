@@ -128,7 +128,7 @@ def extract(directory):
 		plt.close()
 		
 		# NOTE: GC only finds peaks for accel, no troughs... weirdo
-		accel_peaks = accel_spikes(accel['x'][:], all_gyro_spikes)
+		accel_peaks, accel_lp = accel_spikes(accel['x'][:], all_gyro_spikes)
 
 		#peaks = spikes(accel, gyro_peaks)
 
@@ -164,15 +164,14 @@ def extract(directory):
 		legend1 = ['right HS', 'right TO', 'left HS', 'left TO']
 
 		plt.figure()
-		plt.plot(accel['sec'], accel['x'])
-		plt.plot(accel['sec'], accel_first_diff)
+		plt.plot(accel['sec'], accel_lp)
 		for c, i in enumerate(orientation, 1):
 			plt.plot([accel['sec'][x] for x in HS[i]],
-				[accel['x'][x] for x in HS[i]], linestyles[c*2-2])
+				[accel_lp[x] for x in HS[i]], linestyles[c*2-2])
 			plt.plot([accel['sec'][x] for x in TO[i]],\
-				[accel_first_diff[x] for x in TO[i]], linestyles[c*2-1])
+				[accel_lp[x] for x in TO[i]], linestyles[c*2-1])
 		plt.legend(['x accel', 'x diff'] + legend1)
-		#plt.show()
+		plt.show()
 
 
 		output = os.path.join(output_dir, 'heel_toe.pdf')
@@ -221,7 +220,7 @@ if __name__ == '__main__':
 
 	#directory = '../../data_files/analyzed_data'
 	#folder_type = 'y'
-	directory = '../../data_files/analyzed_data/no_003'
+	directory = '../../data_files/analyzed_data/no_009'
 	folder_type = 'n'
 
 	input_check(directory, folder_type)

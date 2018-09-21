@@ -20,7 +20,7 @@ top = ['Patient', 'Pace', 'Stride time', 'Right step time',
 	   'Left Single Stance', 'Cadence']
 	
 def extract(directory, output):
-	"""Compare gait of zeno and uprite system"""
+	"""Extract gait characteristics for zeno system"""
 
 	pace = ['S', 'C', 'F']
 	orientation = ['r', 'l']
@@ -38,6 +38,8 @@ def extract(directory, output):
 		zeno = pickle.load(afile)
 
 	# Find Gait Parameters from HS & TO"""
+
+	gait_names = ['stride', 'right_step', 'left_step', 'double_stnace', 'right_single_stance', 'left_single_stance', 'cadence']
 	stride = []
 	right_step = []
 	left_step = []
@@ -46,15 +48,16 @@ def extract(directory, output):
 	left_single_stance = []
 	cadence = []
 
+	characteristics = {}
+
 	# iterate through each pace type
 	for p in pace:
 		gait[p] = []
+		characteristics[p] = {}
 	
 		# stride time
 		for d in range(1, len(zeno[p]['HS']['r'])):
 			stride.append(zeno[p]['HS']['r'][d] - zeno[p]['HS']['r'][d - 1])
-
-		gait[p].append(stats.mean(stride))
 
 		# Find if right foot or left foot is first
 		right_heel = zeno[p]['HS']['r']
@@ -83,6 +86,7 @@ def extract(directory, output):
 		else:
 			cadence = (right_heel[length - 2] - right_heel[1])/(2*(length-1)) # skips first and last steps
 
+		gait[p].append(stats.mean(stride))
 		gait[p].append(stats.mean(right_step))
 		gait[p].append(stats.mean(left_step))
 		gait[p].append(stats.mean(double_stance))
@@ -90,6 +94,12 @@ def extract(directory, output):
 		gait[p].append(stats.mean(left_single_stance))
 		gait[p].append(cadence)
 
+		# save all gaits in pickle file structure
+		for i in range(0, len(gait[p])):
+			characteristics[p][gait_names[i]] = gait[p][i]
+
+	with open(os.path.join(directory, 'zeno_gait.pkl'), 'wb') as afile:
+		pickle.dump(characteristics, afile)
 
 	"""Add data to csv_file"""
 	for p in pace:

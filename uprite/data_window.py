@@ -231,7 +231,7 @@ def input_check(directory, folder_type):
 		start_time = clocktime.time()
 		# Iterate trough every patient file
 		for c, filename in enumerate(os.listdir(directory)):
-			if c < 58:
+			if c > 2:
 				continue
 			if (filename == '.DS_Store'):
 				continue
@@ -249,8 +249,8 @@ if __name__ == '__main__':
 
 	directory = '../../data_files/analyzed_data'
 	folder_type = 'y'
-	directory = '../../data_files/analyzed_data/no_003'
-	folder_type = 'n'
+	#directory = '../../data_files/analyzed_data/no_003'
+	#folder_type = 'n'
 
 	input_check(directory, folder_type)
 

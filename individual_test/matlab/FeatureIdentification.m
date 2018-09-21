@@ -190,6 +190,21 @@ legend('xaccel','x diff','right HS','right TO','left HS','left TO')
 
 linkaxes(ha,'x')
 
+close all
+
+plot(accelSec, -1*earthXFilt); hold on;
+%plot(accelSec(accelPeaks),earthXFilt(accelPeaks),'gx');
+%plot(accelSec(allAccelPeaks),earthXFilt(allAccelPeaks),'gx');
+%plot(accelSec(to_locations), earthXFilt(to_locations),'k^');
+plot(accelSec(rightHS), -1*earthXFilt(rightHS),'c*');
+plot(accelSec(rightTO), -1*earthXFilt(rightTO),'m*');
+plot(accelSec(leftHS), -1*earthXFilt(leftHS),'bo');
+plot(accelSec(leftTO), -1*earthXFilt(leftTO),'ro');
+
+legend('Uprite Accel X Filtered','Zeno HS right','Zeno TO right','Zeno HS left','Zeno HS left');
+
+
+linkaxes(ha,'x')
 
 
 %plot(peaks, angularPosZ_2(peaks), 'c*');

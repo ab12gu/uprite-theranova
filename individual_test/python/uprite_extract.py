@@ -505,9 +505,11 @@ orientation = ['r', 'l']
 legend1 = ['right HS', 'right TO', 'left HS', 'left TO']
 linestyles = ['c*', 'm*', 'bo', 'ro']
 
+plt.close('all')
+
 plt.figure()
 plt.subplot(211)
-for i in range(0,3):
+for i in range(0,1):
 	plt.plot(time, earth_accel_delta_vector_holder[i,:])
 for c,i in enumerate(orientation,1):
 	plt.plot(HS[i], [0] * len(HS[i]), linestyles[(c*2)-2])

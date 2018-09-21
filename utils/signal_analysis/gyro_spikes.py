@@ -1,5 +1,5 @@
 ####
-# filename: gyro_peaks.py
+# filename: gyro_spikes.py
 # by: Abhay Gupta
 # date: 09/04/18
 #

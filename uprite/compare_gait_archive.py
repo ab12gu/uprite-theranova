@@ -1,7 +1,7 @@
 ####
 # filename: compare_gait.py
 # by: Abhay Gupta
-# date: 09/21/18
+# date: 08/21/18
 #
 # description: compare properties of zeno & uprite TO_HS
 ####
@@ -13,12 +13,10 @@ import sys
 import csv
 import statistics as stats
 import time as clocktime
-from pathlib import Path
- 
 
 # global variables
-top = ['Patient', 'Pace', 'Stride time', 'Right step time',
-		   'Left step time', 'Double stance time', 'Right single stance', 'Left single stance', 'Cadence']
+top = ['Patient', 'System', 'Pace', 'Stride time', 'Right step time',
+		   'Left step time', 'Double stance time', 'Cadence']
 	
 def extract(directory, output):
 	"""Compare gait of zeno and uprite system"""
@@ -27,7 +25,6 @@ def extract(directory, output):
 	system = ['zeno', 'uprite']
 	orientation = ['r', 'l']
 	foot = ['HS', 'TO']
-	gait_names = ['stride', 'right_step', 'left_step', 'double_stnace', 'right_single_stance', 'left_single_stance', 'cadence']
 
 	# iterate through each patient file
 	patient_number = directory[-6:]
@@ -35,50 +32,66 @@ def extract(directory, output):
 	gait = {}
 
 	"""Extract Pickle Data"""
-	zeno_file = os.path.join(directory, 'zeno_gait.pkl')
-	uprite_file = os.path.join(directory, 'uprite_gait.pkl')
+	zeno_file = os.path.join(directory, 'zeno_hs_to.pkl')
+	uprite_file = os.path.join(directory, 'uprite_hs_to.pkl')
 	with open(zeno_file, 'rb') as afile:
 		zeno = pickle.load(afile)
-	file_check =  Path(uprite_file)
-	if not file_check.is_file():
-		uprite = {}
-		for p in pace:
-			uprite[p] = None
-	else:
-		with open(uprite_file, 'rb') as afile:
-			uprite = pickle.load(afile)
+	with open(uprite_file, 'rb') as afile:
+		uprite = pickle.load(afile)
 
 	"""Find Gait Parameters from HS & TO"""
 
 	for p in pace:
-		gait[p] = []
+		for i in foot:
+			for j in orientation:
+				uprite[p][i][j] = [x / 100 for x in uprite[p][i][j]]
+	stride = {}
+	right_step = {}
+	left_step = {}
+	for w in system:
+		gait[w] = {}
+		stride[w] = []
+		right_step[w] = []
+		left_step[w] = []
 
-		for i in range(0, len(gait_names)):
-			if uprite[p] is None:
-				error = None
-			else:
-				UR = uprite[p][gait_names[i]]
-				ZN = zeno[p][gait_names[i]]
-				if UR is None:
-					error = None
-				else:
-					error = (UR - ZN)/ZN
-
-			
-			gait[p].append(error)
-
-	"""Add data to csv_file"""
+	# stride time
 	for p in pace:
-		output.writerow([patient_number, p] + gait[p])
+		gait['zeno'][p] = []
+		gait['uprite'][p] = []
 
-	return
+		for d in range(1, len(zeno[p]['HS']['r'])):
+			stride['zeno'].append(zeno[p]['HS']['r'][d] - zeno[p]['HS']['r'][d - 1])
+		for d in range(1, len(uprite[p]['HS']['r'])):
+			stride['uprite'].append(uprite[p]['HS']['r'][d] - uprite[p]['HS']['r'][d - 1])
 
+		gait['zeno'][p].append(stats.mean(stride['zeno']))
+		if not stride['uprite']:
+			gait['uprite'][p].append(None)
+		else:
+			gait['uprite'][p].append(stats.mean(stride['uprite']))
 
-			# find the % difference
+		# right & left step time
+		# Find if right foot or left foot is first
+		right = zeno[p]['HS']['r']
+		left = zeno[p]['HS']['l']
+		length = min(len(right), len(left))
 
+		for d in range(1, length):
+			if right[d] > left[d]:
+				right_step['zeno'].append(right[d] - left[d])
+				left_step['zeno'].append(left[d] - right[d - 1])
+			else:
+				right_step['zeno'].append(left[d] - right[d])
+				left_step['zeno'].append(right[d] - left[d - 1])
 
+		gait['zeno'][p].append(stats.mean(right_step['zeno']))
+		gait['zeno'][p].append(stats.mean(left_step['zeno']))
 
+	# double stance time
+		gait['zeno'][p].extend(['', ''])
+		gait['uprite'][p].extend(['', '', '', ''])
 
+	# find the % difference
 	gait['dif'] = {}
 
 	for p in pace:
@@ -117,8 +130,6 @@ def input_check(directory, folder_type):
 			for c, filename in enumerate(os.listdir(directory)):
 				if c < 0:
 					continue
-				if filename == ".DS_Store":
-					continue
 
 				print("Current patient iteration: ", c)
 				afile = os.path.join(directory, filename)
@@ -134,11 +145,13 @@ if __name__ == '__main__':
 
 	directory = '../../data_files/analyzed_data'
 	folder_type = 'y'
-	#directory = '../../data_files/analyzed_data/no_003'
-	#folder_type = 'n'
+	directory = '../../data_files/analyzed_data/no_003'
+	folder_type = 'n'
 
 	input_check(directory, folder_type)
 
+	#zeno_input_directory = '../../data_files/temp/zeno'
+	#uprite_input_directory = '../../data_files/temp/uprite/HS_TO/Direct_GC'
 
 
 
