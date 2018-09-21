@@ -23,7 +23,6 @@ def accel_spikes(accel, gyro_peaks):
 
 	import matplotlib.pyplot as plt
 
-	
 	# Calculations
 	fs = 100
 	Ny = fs/2
@@ -52,8 +51,7 @@ def accel_spikes(accel, gyro_peaks):
 		min_dist = my_round(1/4*100)
 		ma_dist = len(accel[start_index:end_index+1])
 
-		accel_peak = find_peaks.forward(accel[start_index:end_index+1], 
-										search_size, min_dist, ma_dist, fs)
+		accel_peak = find_peaks.forward(accel[start_index:end_index+1], search_size, min_dist, ma_dist, fs)
 		
 		accel_peak = [x+start_index for x in accel_peak]
 		

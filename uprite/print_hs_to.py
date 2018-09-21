@@ -12,6 +12,7 @@ import os
 import sys
 import csv
 import statistics as stats
+from pathlib import Path
 
 # global variables
 top = ['Patient','System', 'Pace', 'Stride time', 'Right step time', \
@@ -34,16 +35,24 @@ def extract(directory, output):
 	uprite_file = os.path.join(directory, 'uprite_hs_to.pkl')
 	with open(zeno_file, 'rb') as afile:
 		RS = pickle.load(afile)
-	with open(uprite_file, 'rb') as afile:
-		UR = pickle.load(afile)
+	ur_file = Path(uprite_file)
+	if ur_file.is_file():
+		with open(uprite_file, 'rb') as afile:
+			UR = pickle.load(afile)
+	else:
+		UR = {}
 
 	# export hs and to data	
 	for p in pace:
 		for o in orientation:
 			for f in foot:
-				UR[p][f][o] = [x/100 for x in UR[p][f][o]]
-				output.writerow([patient_number, p, 'RS', o, f] + RS[p][f][o])
-				output.writerow([patient_number, p, 'UR', o, f] + UR[p][f][o])
+				if p not in UR.keys() or f not in UR[p].keys():
+					temp = [None]
+				else:
+					UR[p][f][o] = [x/100 for x in UR[p][f][o]]
+					temp = UR[p][f][o]
+				output.writerow([patient_number, p, 'RS', o, f] + temp)
+				output.writerow([patient_number, p, 'UR', o, f] + temp)
 		output.writerow([])
 
 def input_check(directory, foldertype):
@@ -70,11 +79,11 @@ def input_check(directory, foldertype):
 if __name__ == '__main__':
 	print('Running test files... skipping GUI')
 
-	#directory = '../../data_files/analyzed_data'
-	#foldertype = 'y'
+	directory = '../../data_files/analyzed_data'
+	foldertype = 'y'
 	
-	directory = '../../data_files/analyzed_data/no_003'
-	foldertype = 'n'
+	#directory = '../../data_files/analyzed_data/no_003'
+	#foldertype = 'n'
 	input_check(directory, foldertype)
 
 

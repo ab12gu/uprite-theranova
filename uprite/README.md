@@ -37,23 +37,21 @@ This readme states the reasoning for each function and the order of which each f
 <dl>
   <dt>6. Extract to and hs from uprite sensor</dt>
   <dd>Script: uprite/extract_uprite.py</dd>
-  <dd>Output: new python pickle file (uprite_hs_to.pkl) </dd>
+  <dd>Output: new python pickle file (uprite_hs_to.pkl) & plots</dd>
 </dl>
 
 <dl>
   <dt>7. Calculate gait parameters from zeno walkway</dt>
   <dd>Script: uprite/zeno_gait.py</dd>
-  <dd>Output:  </dd>
+  <dd>Output: new python pickle file (zeno_gait.pkl) & csv file </dd>
 </dl>
 
-#### WORKING ON IT
 <dl>
   <dt>8. Calculate gait parameters from uprite sensor</dt>
   <dd>Script: uprite/uprite_gait.py</dd>
-  <dd>Output:  </dd>
+  <dd>Output: new python pickle file (uprite_gait.pkl) & csv file </dd>
 </dl>
 
-#### WORKING ON IT
 <dl>
   <dt>9. Compare gait parameters from uprite and zeno sensors</dt>
   <dd>Script: uprite/compare_gait.py</dd>
@@ -72,6 +70,3 @@ This readme states the reasoning for each function and the order of which each f
   <dd>Script: uprite/datestamp_window.py</dd>
   <dd>Output: None (just plots) </dd>
 </dl>
-
-need document to print windows fo data...  
-need document containing graphed peaks and troughs...  

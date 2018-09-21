@@ -128,19 +128,22 @@ def extract(directory):
 		plt.close()
 		
 		# NOTE: GC only finds peaks for accel, no troughs... weirdo
+
 		accel_peaks, accel_lp = accel_spikes(accel['x'][:], all_gyro_spikes)
 
 		#peaks = spikes(accel, gyro_peaks)
 
-		to_locations, temp = max_jerk(accel['x'][:], accel_peaks)
+		to_locations, temp = max_jerk(accel_lp[:], accel_peaks)
 
 		from utils.data_structure_functions import difference
-		accel_first_diff = difference.first(accel['x'],1)
+		accel_first_diff = difference.first(accel_lp,1)
 
 
-		plt.plot(accel['sec'], accel_first_diff)
-		plt.plot([accel['sec'][x] for x in to_locations], [accel_first_diff[x-1] for x in to_locations], 'k^')
+		plt.plot(accel['sec'], accel_lp)
+		plt.plot([accel['sec'][x] for x in to_locations], [accel_lp[x] for x in to_locations], 'k^')
 		plt.legend(['accel_diff', 'to_locations'])
+
+		#plt.show()
 			
 		output = os.path.join(output_dir, 'to_locations.pdf')
 		plt.savefig(output)
@@ -148,14 +151,13 @@ def extract(directory):
 
 
 		plt.figure()	
-		plt.plot(accel['sec'], accel['x'])
-		plt.plot([accel['sec'][x] for x in accel_peaks], [accel['x'][x] for x in accel_peaks], 'co')
+		plt.plot(accel['sec'], accel_lp)
+		plt.plot([accel['sec'][x] for x in accel_peaks], [accel_lp[x] for x in accel_peaks], 'co')
 		plt.legend(['accel x', 'accel peaks'])
-		
+
 		output = os.path.join(output_dir, 'accel_peaks.pdf')
 		plt.savefig(output)
 		plt.close()
-
 
 		HS, TO = right_left(accel_peaks, all_gyro_spikes, gyro_troughs, to_locations)
 
@@ -171,8 +173,6 @@ def extract(directory):
 			plt.plot([accel['sec'][x] for x in TO[i]],\
 				[accel_lp[x] for x in TO[i]], linestyles[c*2-1])
 		plt.legend(['x accel', 'x diff'] + legend1)
-		plt.show()
-
 
 		output = os.path.join(output_dir, 'heel_toe.pdf')
 		plt.savefig(output)
@@ -180,10 +180,9 @@ def extract(directory):
 
 
 
-
-		save_data[p]['HS'] = {}
+		save_data[p] = {}
 		save_data[p]['HS'] = HS
-		save_data[p]['TO'] = {}
+		save_data[p] = {}
 		save_data[p]['TO'] = TO
 
 
@@ -215,10 +214,10 @@ def input_check(directory, folder_type):
 if __name__ == '__main__':
 	print('Running test files... skipping GUI')
 
-	#directory = '../../data_files/analyzed_data'
-	#folder_type = 'y'
-	directory = '../../data_files/analyzed_data/no_009'
-	folder_type = 'n'
+	directory = '../../data_files/analyzed_data'
+	folder_type = 'y'
+	#directory = '../../data_files/analyzed_data/no_009'
+	#folder_type = 'n'
 
 	input_check(directory, folder_type)
 

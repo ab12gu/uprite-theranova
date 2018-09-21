@@ -21,8 +21,8 @@ Actually, you just need to run:  `pipenv install`
 ## Deployment
 
 Open a virtual environment from root of repository:  `pipenv shell`  
-Open up the scripts folder and run script: `pythonw main.py`  
-Note: read README.md in scripts folder to understand what is happening.  
+Open up the scripts folder and run script: `python3 main.py`  
+Note: read README.md in uprite folder to understand what is happening.  
 
 ## Results  
 

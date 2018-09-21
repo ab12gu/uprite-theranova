@@ -3,7 +3,6 @@
 #
 # Description: All custom filter functions
 
-
 # Use the FIR filter on the data, where you take both the first have and 
 # ... second half of data
 
