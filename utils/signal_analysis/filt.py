@@ -75,8 +75,6 @@ def lowpass(data, f_cuts, fsamp, ripple_tol):
 	# Create FIR Filter
 	h = signal.firwin(numtaps, cutoff, window=('kaiser', beta), scale=False, pass_zero=True)
 
-	from mat
-
 	return data_fil(data[:], h, pass_zero = True)
 
 def general(data, f_cuts, fsamp, ripple_tol, filter_type):

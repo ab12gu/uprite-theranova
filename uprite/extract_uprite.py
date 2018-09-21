@@ -181,9 +181,6 @@ def extract(directory):
 
 
 
-
-
-		save_data[p] = {}
 		save_data[p]['HS'] = {}
 		save_data[p]['HS'] = HS
 		save_data[p]['TO'] = {}
