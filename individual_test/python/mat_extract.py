@@ -18,11 +18,9 @@ import glob
 p = os.path.abspath('../../../Data/Parsing Program/')
 sys.path.append(p)
 
-
 # Script imports
 import mat_to_dict as convert
 import print_struct as visual
-
 
 # Initialize Files
 input_directory = None
@@ -31,10 +29,8 @@ output_directory = ''
 name = 'no_001'
 
 accel = convert.fn(input_file, input_directory)
-data = {'UR' : { 'sensorData': {'tailBone': accel}}}
+data = {'UR': {'sensorData': {'tailBone': accel}}}
 visual.print_all_keys(data)
 
 with open(os.path.join(output_directory, name + '.pkl'), 'wb') as afile:
-	pickle.dump(data, afile)
-
-
+    pickle.dump(data, afile)

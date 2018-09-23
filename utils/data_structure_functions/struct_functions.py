@@ -6,8 +6,7 @@
 
 # evaluates how many lines are in a file
 def file_len(fname):
-	with open(fname) as f:
-		for i, l in enumerate(f):
-			pass
-	return i+1
-
+    with open(fname) as f:
+        for i, l in enumerate(f):
+            pass
+    return i + 1

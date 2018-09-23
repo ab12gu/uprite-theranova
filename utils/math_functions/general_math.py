@@ -7,7 +7,5 @@
 
 # Removes idiotic rounding of python...
 def my_round(x):
-	import math
-	return int(x + math.copysign(0.5, x))
-
-
+    import math
+    return int(x + math.copysign(0.5, x))

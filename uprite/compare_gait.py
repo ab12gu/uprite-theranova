@@ -9,138 +9,135 @@
 # Library imports
 import pickle
 import os
-import sys
 import csv
-import statistics as stats
-import time as clocktime
+import logging
+import argparse
+from enum import Enum
 from pathlib import Path
- 
 
-# global variables
-top = ['Patient', 'Pace', 'Stride time', 'Right step time',
-		   'Left step time', 'Double stance time', 'Right single stance', 'Left single stance', 'Cadence']
-	
+
+class PaceTypes(Enum):
+    SLOW = 'S'
+    CALM = 'C'
+    FAST = 'F'
+
+
+class GaitTypes(Enum):
+    STRIDE = 'stride'
+    RIGHT_STEP = 'right_step'
+    LEFT_STEP = 'left_step'
+    DOUBLE_STANCE = 'double_stance'
+    RIGHT_SINGLE_STANCE = 'right_single_stance'
+    LEFT_SINGLE_STANCE = 'left_single_stance'
+    CADENCE = 'cadence'
+
+
 def extract(directory, output):
-	"""Compare gait of zeno and uprite system"""
+    """Compare gait of zeno and uprite system"""
+    # iterate through each patient file
+    patient_number = directory[-6:]
+    print("Extrating data from patient: ", patient_number)
 
-	pace = ['S', 'C', 'F']
-	system = ['zeno', 'uprite']
-	orientation = ['r', 'l']
-	foot = ['HS', 'TO']
-	gait_names = ['stride', 'right_step', 'left_step', 'double_stnace', 'right_single_stance', 'left_single_stance', 'cadence']
+    """Extract Pickle Data"""
+    zeno = extract_zeno_pickle_data(directory)
+    uprite = extract_uprite_pickle_data(directory)
 
-	# iterate through each patient file
-	patient_number = directory[-6:]
-	print("Extrating data from patient: ", patient_number)
-	gait = {}
+    """Find Gait Parameters from HS & TO"""
+    error_by_pace = get_error_by_pace(uprite, zeno)
 
-	"""Extract Pickle Data"""
-	zeno_file = os.path.join(directory, 'zeno_gait.pkl')
-	uprite_file = os.path.join(directory, 'uprite_gait.pkl')
-	with open(zeno_file, 'rb') as afile:
-		zeno = pickle.load(afile)
-	file_check =  Path(uprite_file)
-	if not file_check.is_file():
-		uprite = {}
-		for p in pace:
-			uprite[p] = None
-	else:
-		with open(uprite_file, 'rb') as afile:
-			uprite = pickle.load(afile)
+    """Add data to csv_file"""
+    for p in PaceTypes:
+        output.writerow([patient_number, p.value] + error_by_pace[p.value])
 
-	"""Find Gait Parameters from HS & TO"""
-
-	for p in pace:
-		gait[p] = []
-
-		for i in range(0, len(gait_names)):
-			if uprite[p] is None:
-				error = None
-			else:
-				UR = uprite[p][gait_names[i]]
-				ZN = zeno[p][gait_names[i]]
-				if UR is None:
-					error = None
-				else:
-					error = (UR - ZN)/ZN
-
-			
-			gait[p].append(error)
-
-	"""Add data to csv_file"""
-	for p in pace:
-		output.writerow([patient_number, p] + gait[p])
-
-	return
+    return
 
 
-			# find the % difference
+def get_error_by_pace(gait_names, uprite, zeno):
+    error_per_pace = {}
+    for p in PaceTypes:
+        error_per_pace[p.value] = []
+
+        for gait_name in gait_names:
+            error = get_gait_percent_error(gait_name, p, uprite, zeno)
+            error_per_pace[p.value].append(error)
+    return error_per_pace
 
 
+def get_gait_percent_error(gait_name, p, uprite, zeno):
+    if uprite[p.value] is None:
+        error = None
+    else:
+        UR = uprite[p.value][gait_name]
+        ZN = zeno[p.value][gait_name]
+        if UR is None:
+            error = None
+        else:
+            error = (UR - ZN) / ZN
+    return error
 
 
-	gait['dif'] = {}
+def extract_zeno_pickle_data(directory):
+    zeno_file = os.path.join(directory, 'zeno_gait.pkl')
+    with open(zeno_file, 'rb') as afile:
+        zeno = pickle.load(afile)
+    return zeno
 
-	for p in pace:
-		gait['dif'][p] = [] 
-		for i in range(0, len(gait['uprite'][p])):
-			if i > 0: # only do first one rn... due to missing analyzes
-				continue
-			elif gait['uprite'][p][0] is None:
-				gait['dif'][p].append(None)
-				continue
-			gait['dif'][p].append((gait['uprite'][p][i] - gait['zeno'][p][i]) / gait['zeno'][p][i])
-		gait['dif'][p].extend(['', '', '', ''])
-		
 
-	"""Add data to csv_file"""
-	for p in pace:
-		output.writerow([patient_number, 'uprite', p] + gait['uprite'][p])
-		output.writerow(['', 'zeno', p] + gait['zeno'][p])
-		output.writerow(['', '', '% Error'] + gait['dif'][p])
+def extract_uprite_pickle_data(uprite_file):
+    file_check = Path(uprite_file)
+    if not file_check.is_file():
+        logging.error("File not found at {}".format(uprite_file))
+        uprite = {}
+        for p in PaceTypes:
+            uprite[p.value] = None
+    else:
+        with open(uprite_file, 'rb') as afile:
+            uprite = pickle.load(afile)
+    return uprite
 
-def input_check(directory, folder_type):
-	"""Check input folder type"""
 
-	if (folder_type == 'n'): # run single patient file
-		with open('../docs/compare_gait.csv', 'a') as csvfile:
-			output = csv.writer(csvfile)
+def input_check(directory, output_file, do_append):
+    if do_append:
+        with open(output_file, "a") as dst:
+            csv_writer = csv.writer(dst)
+    else:
+        with open(output_file, "w") as dst:
+            csv_writer = csv.writer(dst)
+            csv_writer.writerow(header)
 
-			extract(directory, output)
-	else: # iterate through every patient file
-		start_time = clocktime.time()
+    if os.path.isdir(directory):
+        subdirectories = os.listdir(directory)
+        for subdirectory in subdirectories:
+            if not os.path.isdir(subdirectory):
+                continue
+            extract(subdirectory, csv_writer)
+    else:
+        extract(directory, csv_writer)
 
-		with open('../docs/compare_gait.csv', 'w') as csvfile:
-			output = csv.writer(csvfile)
-			output.writerow(top)
-		
-			for c, filename in enumerate(os.listdir(directory)):
-				if c < 0:
-					continue
-				if filename == ".DS_Store":
-					continue
 
-				print("Current patient iteration: ", c)
-				afile = os.path.join(directory, filename)
-				extract(afile, output)
+def parse_args():
+    arg_parser = argparse.ArgumentParser()
+    arg_parser.add_argument("--directory",
+                            help="The directory where the source data files "
+                                 "are located.",
+                            type=str,
+                            required=True)
+    arg_parser.add_argument("--output_file",
+                            help="The CSV file to output data to.",
+                            type=str,
+                            required=True)
+    arg_parser.add_argument("--append",
+                            help="Indicates that the output file should be "
+                                 "appended to.",
+                            type="store_true")
+    args = arg_parser.parse_args()
+    return args
 
-		print('Successful run!') 
-		print('-----------RUNTIME: %s second ----' % (clocktime.time() - start_time))
-
-		
 
 if __name__ == '__main__':
-	print('Running test files... skipping GUI')
-
-	directory = '../../data_files/analyzed_data'
-	folder_type = 'y'
-	#directory = '../../data_files/analyzed_data/no_003'
-	#folder_type = 'n'
-
-	input_check(directory, folder_type)
-
-
-
-
-
-
+    print('Running test files... skipping GUI')
+    args = parse_args()
+    input_directory = args.directory
+    output_file = args.output_file
+    do_append = args.append
+    input_check(input_directory, output_file, do_append)

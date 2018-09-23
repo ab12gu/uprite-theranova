@@ -7,132 +7,139 @@
 # ... second half of data
 
 def data_fil(data, h, pass_zero=False):
-	from scipy import signal
-	import statistics as stats
-	from utils.math_functions.general_math import my_round
-	
-	# Filter the ecg signal
-	filtered_data = signal.lfilter(h, 1, data)
-	filtered_data = filtered_data.tolist() 
+    from scipy import signal
+    import statistics as stats
+    from utils.math_functions.general_math import my_round
 
-	# Invert the ecg signals, to filter the signal backwards
-	data_inverted = list(reversed(data))
-	filtered_inverted_data = signal.lfilter(h, 1, data_inverted).tolist()
+    # Filter the ecg signal
+    filtered_data = signal.lfilter(h, 1, data)
+    filtered_data = filtered_data.tolist()
 
-	# Reinvert the inverted filtered ecg signal, to right placement
-	reinverted_filtered_data = list(reversed(filtered_inverted_data)) 
+    # Invert the ecg signals, to filter the signal backwards
+    data_inverted = list(reversed(data))
+    filtered_inverted_data = signal.lfilter(h, 1, data_inverted).tolist()
 
-	# Find the offset value of the filter
-	filter_delay = my_round(len(h) / 2)
+    # Reinvert the inverted filtered ecg signal, to right placement
+    reinverted_filtered_data = list(reversed(filtered_inverted_data))
 
-	if (filter_delay > my_round(len(data) / 2)):
-		filter_delay = my_round(len(data) / 2)
-	
-	adjusted_filtered_data = filtered_data[filter_delay - 1:]
-	# low pass filter settings....
-	# Read just the positioning due to phase offset
-	if (pass_zero==True):
-		adjusted_reinverted_filtered_data = \
-			[stats.mean(reinverted_filtered_data[0:-(filter_delay+20)])] \
-			* (filter_delay) + reinverted_filtered_data[0:-filter_delay]
+    # Find the offset value of the filter
+    filter_delay = my_round(len(h) / 2)
 
-		cleaned_filtered_data = \
-			adjusted_filtered_data[0:my_round(len(adjusted_filtered_data) / 2)] +  \
-			adjusted_reinverted_filtered_data[my_round(len(adjusted_filtered_data)/2):]
-	else:
-		adjusted_reinverted_filtered_data = \
-			[stats.mean(reinverted_filtered_data[0:-(filter_delay+20)])] \
-			* (filter_delay-1) + reinverted_filtered_data[0:-filter_delay+1]
+    if (filter_delay > my_round(len(data) / 2)):
+        filter_delay = my_round(len(data) / 2)
 
-		cleaned_filtered_data = \
-			adjusted_filtered_data[0:my_round(len(adjusted_filtered_data) / 2)] +  \
-			adjusted_reinverted_filtered_data[my_round(len(adjusted_filtered_data)/2):]
+    adjusted_filtered_data = filtered_data[filter_delay - 1:]
+    # low pass filter settings....
+    # Read just the positioning due to phase offset
+    if (pass_zero == True):
+        adjusted_reinverted_filtered_data = \
+            [stats.mean(reinverted_filtered_data[0:-(filter_delay + 20)])] \
+            * (filter_delay) + reinverted_filtered_data[0:-filter_delay]
 
-	return cleaned_filtered_data
+        cleaned_filtered_data = \
+            adjusted_filtered_data[
+            0:my_round(len(adjusted_filtered_data) / 2)] + \
+            adjusted_reinverted_filtered_data[
+            my_round(len(adjusted_filtered_data) / 2):]
+    else:
+        adjusted_reinverted_filtered_data = \
+            [stats.mean(reinverted_filtered_data[0:-(filter_delay + 20)])] \
+            * (filter_delay - 1) + reinverted_filtered_data[0:-filter_delay + 1]
+
+        cleaned_filtered_data = \
+            adjusted_filtered_data[
+            0:my_round(len(adjusted_filtered_data) / 2)] + \
+            adjusted_reinverted_filtered_data[
+            my_round(len(adjusted_filtered_data) / 2):]
+
+    return cleaned_filtered_data
+
 
 # Low pass - Kaiser window, FIR filter
 def lowpass(data, f_cuts, fsamp, ripple_tol):
-	from scipy import signal
-	import math as m
+    from scipy import signal
+    import math as m
 
-	# Nyquist frequency
-	Ny = fsamp / 2
+    # Nyquist frequency
+    Ny = fsamp / 2
 
-	# Width of the transition band
-	width = f_cuts[1] - f_cuts[0]
+    # Width of the transition band
+    width = f_cuts[1] - f_cuts[0]
 
-	# Single parameter to controlling max allowable pb & sb ripple
-	ripple_tol = min(ripple_tol)
-	ripple_tol = -20 * m.log10(ripple_tol)
+    # Single parameter to controlling max allowable pb & sb ripple
+    ripple_tol = min(ripple_tol)
+    ripple_tol = -20 * m.log10(ripple_tol)
 
-	# Determine the length of filter & shape parameter for kaiser window
-	numtaps, beta = signal.kaiserord(ripple_tol, width)
+    # Determine the length of filter & shape parameter for kaiser window
+    numtaps, beta = signal.kaiserord(ripple_tol, width)
 
-	# Center of transition window
-	cutoff = (f_cuts[1] + f_cuts[0]) / 2
+    # Center of transition window
+    cutoff = (f_cuts[1] + f_cuts[0]) / 2
 
-	# Create FIR Filter
-	h = signal.firwin(numtaps, cutoff, window=('kaiser', beta), scale=False, pass_zero=True)
+    # Create FIR Filter
+    h = signal.firwin(numtaps, cutoff, window=('kaiser', beta), scale=False,
+                      pass_zero=True)
 
-	return data_fil(data[:], h, pass_zero = True)
+    return data_fil(data[:], h, pass_zero=True)
+
 
 def general(data, f_cuts, fsamp, ripple_tol, filter_type):
+    from scipy import signal
+    import math as m
 
-	from scipy import signal
-	import math as m
+    # Nyquist frequency
+    Ny = fsamp / 2
 
-	# Nyquist frequency
-	Ny = fsamp / 2
+    # Width of the transition band
+    width = f_cuts[1] - f_cuts[0]
 
-	# Width of the transition band
-	width = f_cuts[1] - f_cuts[0]
+    # Single parameter to controlling max allowable pb & sb ripple
+    ripple_tol = min(ripple_tol)
+    ripple_tol = -20 * m.log10(ripple_tol)
 
-	# Single parameter to controlling max allowable pb & sb ripple
-	ripple_tol = min(ripple_tol)
-	ripple_tol = -20 * m.log10(ripple_tol)
+    # Determine the length of filter & shape parameter for kaiser window
+    numtaps, beta = signal.kaiserord(ripple_tol, width)
 
-	# Determine the length of filter & shape parameter for kaiser window
-	numtaps, beta = signal.kaiserord(ripple_tol, width)
+    # Center of transition window
+    cutoff = (f_cuts[1] + f_cuts[0]) / 2
 
-	# Center of transition window
-	cutoff = (f_cuts[1] + f_cuts[0]) / 2
-	
-	if (filter_type == 'high'):
-		zero_pass = False
-		if (numtaps % 2 == 0) and (cutoff < Ny):
-			numtaps += 1
-	else:
-		zero_pass = True
+    if (filter_type == 'high'):
+        zero_pass = False
+        if (numtaps % 2 == 0) and (cutoff < Ny):
+            numtaps += 1
+    else:
+        zero_pass = True
 
-	# Create FIR Filter
-	h = signal.firwin(numtaps, cutoff, window=('kaiser', beta), scale=False, pass_zero=zero_pass)
+    # Create FIR Filter
+    h = signal.firwin(numtaps, cutoff, window=('kaiser', beta), scale=False,
+                      pass_zero=zero_pass)
 
-	return data_fil(data, h, zero_pass)
+    return data_fil(data, h, zero_pass)
 
 
 def highpass(data, fs, cutoff):
-	from scipy import signal
+    from scipy import signal
 
-	order = 900
-	numtaps = order + 1
-	Ny = fs / 2
-	cutoff = cutoff / (Ny)
-	coeff = signal.firwin(numtaps, cutoff, pass_zero=False)
+    order = 900
+    numtaps = order + 1
+    Ny = fs / 2
+    cutoff = cutoff / (Ny)
+    coeff = signal.firwin(numtaps, cutoff, pass_zero=False)
 
-	return data_fil(data, coeff)
+    return data_fil(data, coeff)
 
 
 # High pass FIR filter
 def highpass_gc(data, fs, cutoff):
-	from scipy import signal
+    from scipy import signal
 
-	order = 900
-	numtaps = order + 1
-	Ny = fs / 2
-	cutoff = cutoff / (Ny)
-	coeff = signal.firwin(numtaps, cutoff, pass_zero=False)
+    order = 900
+    numtaps = order + 1
+    Ny = fs / 2
+    cutoff = cutoff / (Ny)
+    coeff = signal.firwin(numtaps, cutoff, pass_zero=False)
 
-	return data_fil(data, coeff)
+    return data_fil(data, coeff)
 
 
 # From Python docs, analyze the filter deviation from set ripple tolerances

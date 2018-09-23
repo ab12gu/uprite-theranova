@@ -1,5 +1,6 @@
 from math import sqrt
 
+
 def squared_primes(maximum):
     primes = []
 

@@ -16,139 +16,146 @@ from itertools import product
 import matplotlib.pyplot as plt
 
 # custom package imports
-from utils.visualize_structure import visualize_structure as visual # see dictionary structure
-from utils.directory_functions.mkdir_path import mkdir_path 
+from utils.visualize_structure import \
+    visualize_structure as visual  # see dictionary structure
+from utils.directory_functions.mkdir_path import mkdir_path
 
 # global variables
-top = ['Presents the amount of recorded time per patient (in seconds) by UpRite Sensors']
+top = [
+    'Presents the amount of recorded time per patient (in seconds) by UpRite Sensors']
 sensor_loc = ['leftAnkle', 'leftHip', 'rightAnkle', 'rightHip', 'tailBone']
 abbrev = ['LA', 'LH', 'RA', 'RH', 'TB']
 modifier = 'python_struct.pkl'
 sensor_type = ['accel', 'gyro']
 patient_label = ['Patient Name']
 sensor_loc = ['leftAnkle', 'leftHip', 'rightAnkle', 'rightHip', 'tailBone']
-header_names =  patient_label + list(map(''.join, product(abbrev,[' '],sensor_type))) 
+header_names = patient_label + list(
+    map(''.join, product(abbrev, [' '], sensor_type)))
+
 
 def flag(input_directory, writer):
-	"""flags empty data"""
-	
-	# Find if data is empty. Store in csv file and overwrite pickle file.
-	print('Extracting Pickle Data')
-	patient_number = input_directory[-6:]
-	pickle_file = os.path.join(input_directory, modifier)
-	with open(pickle_file, 'rb') as afile:
-		data = pickle.load(afile)
+    """flags empty data"""
 
-	print('Find if data is empty')
-	# Initialize values 
-	check_data = data['UR']['sensorData']
-	print(patient_number)
-	output = {}
-	data['Flags'] = {}
-	counter = 0
-	
-	print('Checking file ', patient_number)
-	for i in range(0,len(sensor_loc)):
-		data['Flags'][sensor_loc[i]] = {}
-		
-		for j in range(0,len(sensor_type)):
-			data['Flags'][sensor_loc[i]][sensor_type[j]] = {}
-			
-			if sensor_loc[i] in check_data:	
-				check = check_data[sensor_loc[i]][sensor_type[j]]['data']['x']
-				if not check: #if empty
-					out = None
-					check = 0
-				else: #if not empty
-					out = len(check)/100
-					check = 1
-			else:
-				out = 'None'
-				check = 0
-			
-			data['Flags'][sensor_loc[i]][sensor_type[j]] = check
-			output[counter] = str(out)
-			counter += 1
-		
-	out = {patient_label[0]: patient_number}
-	for n in range(0,counter):
-		out[header_names[n+1]] = output[n]
+    # Find if data is empty. Store in csv file and overwrite pickle file.
+    print('Extracting Pickle Data')
+    patient_number = input_directory[-6:]
+    pickle_file = os.path.join(input_directory, modifier)
+    with open(pickle_file, 'rb') as afile:
+        data = pickle.load(afile)
 
-	print("Writing to csv file")
-	writer.writerow(out)
+    print('Find if data is empty')
+    # Initialize values
+    check_data = data['UR']['sensorData']
+    print(patient_number)
+    output = {}
+    data['Flags'] = {}
+    counter = 0
 
-	with open(pickle_file, 'wb') as afile:
-		pickle.dump(data , afile)
+    print('Checking file ', patient_number)
+    for i in range(0, len(sensor_loc)):
+        data['Flags'][sensor_loc[i]] = {}
 
-	# Check if file really has flags added:
-	# with open(pickle_file, 'rb') as afile:
-	#	data = pickle.load(afile)
-	#	visual.print_keys(data, 9)
+        for j in range(0, len(sensor_type)):
+            data['Flags'][sensor_loc[i]][sensor_type[j]] = {}
 
-	if 'tailBone' not in check_data:
-		return
+            if sensor_loc[i] in check_data:
+                check = check_data[sensor_loc[i]][sensor_type[j]]['data']['x']
+                if not check:  # if empty
+                    out = None
+                    check = 0
+                else:  # if not empty
+                    out = len(check) / 100
+                    check = 1
+            else:
+                out = 'None'
+                check = 0
 
-	print('Saving plots')
+            data['Flags'][sensor_loc[i]][sensor_type[j]] = check
+            output[counter] = str(out)
+            counter += 1
 
-	# save plots of files
-	home = '../../figures/tailbone/' 
-	output_dir = os.path.join(home, patient_number)
-	mkdir_path(output_dir)
+    out = {patient_label[0]: patient_number}
+    for n in range(0, counter):
+        out[header_names[n + 1]] = output[n]
 
-	accel = check_data['tailBone']['accel']['data']
-	gyro = check_data['tailBone']['gyro']['data']
+    print("Writing to csv file")
+    writer.writerow(out)
 
-	plt.plot(accel['x'])
-	plt.plot(accel['y'])
-	plt.plot(accel['z'])
-	plt.legend(['x', 'y', 'z'])
+    with open(pickle_file, 'wb') as afile:
+        pickle.dump(data, afile)
 
-	output = os.path.join(output_dir, 'accel_raw.pdf')
-	plt.savefig(output)
-	plt.close()
-	
-	plt.plot(gyro['x'])
-	plt.plot(gyro['y'])
-	plt.plot(gyro['z'])
-	plt.legend(['x', 'y', 'z'])
+    # Check if file really has flags added:
+    # with open(pickle_file, 'rb') as afile:
+    #	data = pickle.load(afile)
+    #	visual.print_keys(data, 9)
 
-	output = os.path.join(output_dir, 'gyro_raw.pdf')
-	plt.savefig(output)
-	plt.close()
+    if 'tailBone' not in check_data:
+        return
+
+    print('Saving plots')
+
+    # save plots of files
+    home = '../../figures/tailbone/'
+    output_dir = os.path.join(home, patient_number)
+    mkdir_path(output_dir)
+
+    accel = check_data['tailBone']['accel']['data']
+    gyro = check_data['tailBone']['gyro']['data']
+
+    plt.plot(accel['x'])
+    plt.plot(accel['y'])
+    plt.plot(accel['z'])
+    plt.legend(['x', 'y', 'z'])
+
+    output = os.path.join(output_dir, 'accel_raw.pdf')
+    plt.savefig(output)
+    plt.close()
+
+    plt.plot(gyro['x'])
+    plt.plot(gyro['y'])
+    plt.plot(gyro['z'])
+    plt.legend(['x', 'y', 'z'])
+
+    output = os.path.join(output_dir, 'gyro_raw.pdf')
+    plt.savefig(output)
+    plt.close()
+
 
 def input_check(directory, folder_type):
-	"""Save if the data is empty depending on folder type"""
+    """Save if the data is empty depending on folder type"""
 
-	if (folder_type == 'n'):
-		with open('../docs/uprite_data_overview.csv', 'a') as csvfile:
-			writer = csv.DictWriter(csvfile, fieldnames = header_names)
-			flag(directory, writer)
-			
-	else: # create new csv file, and add to it.
-		with open('../docs/uprite_data_overview.csv', 'w') as csvfile: # write header to output csv file
-			begin = csv.writer(csvfile)
-			begin.writerow(top)
+    if (folder_type == 'n'):
+        with open('../docs/uprite_data_overview.csv', 'a') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=header_names)
+            flag(directory, writer)
 
-			for i in range(0,5):
-				begin.writerow({abbrev[i] + '='+ sensor_loc[i]})
-			for i in range(0,2):
-				begin.writerow('')
+    else:  # create new csv file, and add to it.
+        with open('../docs/uprite_data_overview.csv',
+                  'w') as csvfile:  # write header to output csv file
+            begin = csv.writer(csvfile)
+            begin.writerow(top)
 
-		with open('../docs/uprite_data_overview.csv', 'a') as csvfile:
-			writer = csv.DictWriter(csvfile, fieldnames = header_names)
-			writer.writeheader()
+            for i in range(0, 5):
+                begin.writerow({abbrev[i] + '=' + sensor_loc[i]})
+            for i in range(0, 2):
+                begin.writerow('')
 
-			for c, filename in enumerate(os.listdir(directory)):
-				if filename.endswith(".DS_Store"): # skip folder meta-data
-					continue
-				afile = os.path.join(directory, filename)
-				flag(afile, writer)
+        with open('../docs/uprite_data_overview.csv', 'a') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=header_names)
+            writer.writeheader()
+
+            for c, filename in enumerate(os.listdir(directory)):
+                if filename.endswith(".DS_Store"):  # skip folder meta-data
+                    continue
+                afile = os.path.join(directory, filename)
+                flag(afile, writer)
+
 
 if __name__ == '__main__':
-	print('Running test files... skipping GUI')
+    print('Running test files... skipping GUI')
 
-	folder_name = 'n'
-	directory = '../../data_files/analyzed_data/no_003'
-	#folder_name = 'y'
-	#directory = '../../data_files/analyzed_data/'
-	input_check(directory, folder_name)
+    folder_name = 'n'
+    directory = '../../data_files/analyzed_data/no_003'
+    # folder_name = 'y'
+    # directory = '../../data_files/analyzed_data/'
+    input_check(directory, folder_name)
